@@ -18,11 +18,6 @@ router.get('/', function(req, res, next) {
   }
 });
 
-/* GET candidate display page. */
-router.get('/candidate', function(req, res, next) {
-  res.render('candidate', { title: 'Candidates page :)' });
-});
-
 /* GET submitted page. */
 router.get('/submitted', function(req, res, next) {
   res.render('submitted', { title: 'Submitted page :)' });

@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET start page. */
 router.get('/', function(req, res, next) {
-  var date = new Date('November 25, 2020 12:00:00 GMT');
+  var date = new Date('December 10, 2020 12:00:00 GMT');
   
   var dateNow = new Date();
   dateNow.setHours(dateNow.getHours() + 1);
@@ -22,5 +22,10 @@ router.get('/', function(req, res, next) {
 router.get('/submitted', function(req, res, next) {
   res.render('submitted', { title: 'Submitted page :)' });
 });
+
+router.get('/result', function(req, res, next) {
+  res.render('result', { title: 'Result page' });
+});
+
 
 module.exports = router;

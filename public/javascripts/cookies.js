@@ -1,27 +1,11 @@
-checkCookie();
+window.onload = checkCookie;
 
 function disableButton() {
     var x = document.getElementsByClassName('btnVote');
-    var i;
-    for (i = 0; i < x.length; i++) {
-    x[i].disabled = true;
+    for (var i = 0; i < x.length; i++) {
+        x[i].disabled = true;
     }
 }
-
-document.getElementById('button').addEventListener('click', function() {
-    
-    if (document.cookie == 'hasVoted=false') {
-        document.getElementById('value').innerHTML = 'VOTE';
-        setCookie('hasVoted', 'true', 7);
-        console.log(document.cookie);
-    } else if (document.cookie == 'hasVoted=true'){
-        document.getElementById('value').innerHTML = 'ALREADY VOTED!';
-        setCookie('hasVoted', 'true', 7);
-        console.log(document.cookie);
-    }
-    
-    
-});
 
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
@@ -46,21 +30,62 @@ function getCookie(cname) {
     return "";
 }
 
+function myFunction() {
+    /**
+    $(".btnVote").on('click', function (event) {
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+        console.log('funka jävla äckel skit')
+        if (document.cookie == 'hasVoted=false') {
+            disableButton();
+            setCookie('hasVoted', 'true', 7);
+            console.log(document.cookie);
+        }
+    });
+    */
+    
+    var list = document.getElementsByClassName("btnVote");
+    console.log(list);
+
+    for (var i = 0; i < 3; i++) {
+        console.log(list[i]);
+        list[i].addEventListener('click', function(e) {
+            
+            e.preventDefault();
+            
+            if (document.cookie == 'hasVoted=false') {
+                disableButton();
+                setCookie('hasVoted', 'true', 7);
+                console.log(document.cookie);
+            }
+        });
+        
+    };
+    
+}
+
+
+
 function checkCookie() {
+    
+    
+    
     var hasVoted = getCookie('hasVoted');
     if (hasVoted != '') {
         if (hasVoted == 'true') {
-            document.getElementById('value').innerHTML = 'ALREADY VOTED!';
-        } else if (hasVoted == 'false') {
-            document.getElementById('value').innerHTML = 'VOTE';
-        }
+            disableButton();
+        } 
         
         console.log(document.cookie);
     } 
     else {
       setCookie('hasVoted', 'false', 7);
-      console.log(hasVoted);
+      console.log(document.cookie);
 
       
     }
+
+    myFunction();
+
+
 }

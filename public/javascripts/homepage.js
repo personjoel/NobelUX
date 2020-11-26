@@ -13,12 +13,12 @@ for(var i=0; i < dummyData.length ; i++){
         <div id= "homepageCandidates">
             <p>${dummyData[i].name}</p>
             <p>${dummyData[i].shortinfo}</p>
-            <button type="button" class="btnVote" id="${i}">Vote</button>
         </div></a>
+        <button type="button" class="btnVote" id="${i}">Vote</button>
     </div></div>
     `;
    
     li.innerHTML = markup;
     console.log(li);
     document.getElementById("homepageCandidate").appendChild(li);
- }
+}

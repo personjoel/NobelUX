@@ -7,13 +7,21 @@ body {
   margin: 0;
   padding: 0;
 }
-  
+
+/*naming content*/
+#candidatePageName {grid-area: name;}
+#candidatePageShortDesc {grid-area: shortDesc;}
+#candidatePageLifeDesc {grid-area: lifeDesc;}
+#candidatePageWorkDesc {grid-area: workDesc;}
+
 #gridContent {
-  background-color: rgba(43, 43, 43);
   display: grid;
-  grid-gap: 5vw;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  grid-template-areas: 
+    'name shortDesc'
+    'lifeDesc lifeDesc'
+    'workDesc workDesc';
+  background-color: rgba(43, 43, 43);
+  grid-gap: 2vw;
   margin: 5vw;
   padding: 4vw;
   border: solid gold 1px;

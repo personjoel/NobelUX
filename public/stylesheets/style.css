@@ -1,8 +1,33 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: rgba(20, 20, 20);
+  color: rgba(255, 255, 255);
+  font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+}
+
+.gold-text {
+  color:#c3a343;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent),
+  url(URL) repeat;
+  background: -o-linear-gradient(transparent, transparent);
+}
+
+/*Main Content*/
+#mainContent {
+  background: blueviolet;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.homepageCandidates {
+  width: 100%;
+}
+
+#homepageCandidate {
+  background: rgba(255, 255, 255);
+  margin-bottom: 50px;
 }

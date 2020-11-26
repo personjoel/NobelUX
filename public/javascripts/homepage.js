@@ -11,6 +11,7 @@ for(var i=0; i < dummyData.length ; i++){
     <div class="contentFrameWrap"><div class="contentFrame">
         <a href="/candidate/${i}">
         <div id= "homepageCandidates">
+            <img src='images/test.png'>
             <p>${dummyData[i].name}</p>
             <p>${dummyData[i].shortinfo}</p>
         </div></a>

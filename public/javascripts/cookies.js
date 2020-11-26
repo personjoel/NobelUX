@@ -67,9 +67,6 @@ function myFunction() {
 
 
 function checkCookie() {
-    
-    
-    
     var hasVoted = getCookie('hasVoted');
     if (hasVoted != '') {
         if (hasVoted == 'true') {

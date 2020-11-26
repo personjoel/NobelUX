@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
+
 body {
     background: rgba(20, 20, 20);
     color: rgba(255, 255, 255);
@@ -8,10 +10,10 @@ body {
     text-decoration: none;
   }
   
-  .gold-text {
-    color:#c3a343;
+  .goldText {
+    font-family: 'Bilbo', cursive;
     -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(transparent, transparent),
-    url(URL) repeat;
-    background: -o-linear-gradient(transparent, transparent);
+    background: url(../images/gold3.jpg) repeat;
+    -webkit-background-clip: text;
+    font-size: 200px;
   }

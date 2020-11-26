@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
+
 body {
   background: rgba(20, 20, 20);
   color: rgba(255, 255, 255);
@@ -8,15 +10,13 @@ a {
   text-decoration: none;
 }
 
-h2 {
-  font-size: 100px;
-}
-
 .goldText {
+  font-family: 'Bilbo', cursive;
   color:#c3a343;
   -webkit-text-fill-color: transparent;
   background: url(../images/gold3.jpg) repeat;
   -webkit-background-clip: text;
+  font-size: 200px;
 }
 
 /*Main Content*/
@@ -33,4 +33,10 @@ h2 {
 #homepageCandidate {
   background: rgba(255, 255, 255);
   margin-bottom: 50px;
+}
+
+#homepageCandidates {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 200px auto;
 }

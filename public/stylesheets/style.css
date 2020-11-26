@@ -1,42 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
 
-body {
-  background: rgba(20, 20, 20);
-  color: rgba(255, 255, 255);
-  font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+/*general*/
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-a {
-  text-decoration: none;
+/*Top content*/
+#topFrame {
+  background: rgb(43, 43, 43);
+  width: 100%;
 }
+
+#topContent {
+  margin: 0 auto;
+  padding: 20px; 
+  text-align: center;
+  width: 75%;
+}
+
 
 .goldText {
-  font-family: 'Bilbo', cursive;
-  color:#c3a343;
-  -webkit-text-fill-color: transparent;
   background: url(../images/gold3.jpg) repeat;
-  -webkit-background-clip: text;
   font-size: 200px;
+  font-family: 'Bilbo', cursive;
+  margin: 0;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 /*Main Content*/
 #mainContent {
-  background: blueviolet;
+  padding: 0;
   margin: 0 auto;
   width: 80%;
 }
 
+#mainContent p {
+  font-size: 20px;
+  margin: 5px; /*margin på innehåll snarare än*/
+}
+
+  /*Entries & List*/
+.contentFrameWrap {
+  background: url(../images/gold3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 5vw;
+  padding: 5px;
+  position: relative;
+}
+
+.contentFrame {
+  background-color: rgb(43, 43, 43);
+  padding: 10px;
+}
+
 .homepageCandidates {
-  width: 100%;
-}
-
-#homepageCandidate {
-  background: rgba(255, 255, 255);
-  margin-bottom: 50px;
-}
-
-#homepageCandidates {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 200px auto;
+  list-style-type: none; 
+  overflow: auto;
 }

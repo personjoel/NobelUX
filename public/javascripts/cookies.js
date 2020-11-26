@@ -1,27 +1,30 @@
 checkCookie();
 
-function disableButton() {
+var x = document.getElementsByClassName('btnVote');
+var i;
+for (i = 0; i < x.length; i++) {
+    x[i].addEventListener('click', function() {
+    
+        if (document.cookie == 'hasVoted=false') {
+            disableButton(true);
+            setCookie('hasVoted', 'true', 7);
+            console.log(document.cookie);
+        } else if (document.cookie == 'hasVoted=true') {
+            disableButton(false);
+            setCookie('hasVoted', 'false', 7);
+            console.log(document.cookie);
+        }
+        
+    });
+}
+
+function disableButton(status) {
     var x = document.getElementsByClassName('btnVote');
     var i;
     for (i = 0; i < x.length; i++) {
-    x[i].disabled = true;
+    x[i].disabled = status;
     }
 }
-
-document.getElementById('button').addEventListener('click', function() {
-    
-    if (document.cookie == 'hasVoted=false') {
-        document.getElementById('value').innerHTML = 'VOTE';
-        setCookie('hasVoted', 'true', 7);
-        console.log(document.cookie);
-    } else if (document.cookie == 'hasVoted=true'){
-        document.getElementById('value').innerHTML = 'ALREADY VOTED!';
-        setCookie('hasVoted', 'true', 7);
-        console.log(document.cookie);
-    }
-    
-    
-});
 
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
@@ -50,16 +53,16 @@ function checkCookie() {
     var hasVoted = getCookie('hasVoted');
     if (hasVoted != '') {
         if (hasVoted == 'true') {
-            document.getElementById('value').innerHTML = 'ALREADY VOTED!';
+            disableButton(true);
         } else if (hasVoted == 'false') {
-            document.getElementById('value').innerHTML = 'VOTE';
+            disableButton(false);
         }
         
         console.log(document.cookie);
     } 
     else {
       setCookie('hasVoted', 'false', 7);
-      console.log(hasVoted);
+      console.log(document.cookie);
 
       
     }

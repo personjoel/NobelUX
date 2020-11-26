@@ -8,12 +8,15 @@ a {
   text-decoration: none;
 }
 
-.gold-text {
+h2 {
+  font-size: 100px;
+}
+
+.goldText {
   color:#c3a343;
   -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient(transparent, transparent),
-  url(URL) repeat;
-  background: -o-linear-gradient(transparent, transparent);
+  background: url(../images/gold3.jpg) repeat;
+  -webkit-background-clip: text;
 }
 
 /*Main Content*/

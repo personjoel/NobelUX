@@ -1,13 +1,10 @@
 extends layout
 
 block content
-
-  h1= title
-  p #{title}
-
-  p(id="candidatePageName")
-  p(id="candidatePageShortDesc")
-  p(id="candidatePageLifeDesc")
-  p(id="candidatePageWorkDesc")
+  div#gridContent
+    p(id="candidatePageName")
+    p(id="candidatePageShortDesc")
+    p(id="candidatePageLifeDesc")
+    p(id="candidatePageWorkDesc")
 
   script(src="/javascripts/candidatepage.js")

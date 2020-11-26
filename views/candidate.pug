@@ -1,9 +1,13 @@
 extends layout
 
 block content
-  div#gridContent
-    img(src="../public/images/gold3", alt="guldig bild")
-    p.goldText Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro modi ex asperiores a fugiat natus perferendis necessitatibus, ducimus pariatur praesentium earum illum dolor sed. Eius ut incidunt deleniti aliquam blanditiis.
-  
+
+  h1= title
+  p #{title}
+
+  p(id="candidatePageName")
+  p(id="candidatePageShortDesc")
+  p(id="candidatePageLifeDesc")
+  p(id="candidatePageWorkDesc")
 
   script(src="/javascripts/candidatepage.js")

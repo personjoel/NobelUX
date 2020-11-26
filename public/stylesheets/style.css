@@ -1,8 +1,24 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: gold;
 }
 
 a {
   color: #00B7FF;
+}
+
+#homepageCandidates {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 200px auto;
+}
+
+#homepageCandidates p {
+  border: solid black 5px;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  
+  font-size: 2vmin;
 }

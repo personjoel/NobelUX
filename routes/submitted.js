@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET start page. */
+/* GET submitted display page. */
 router.get('/', function(req, res, next) {
   var date = new Date('December 10, 2020 12:00:00 GMT');
   
@@ -14,13 +14,8 @@ router.get('/', function(req, res, next) {
   if (dateNow >= date) {
     res.render('result', { title: 'Results' });
   } else {
-    res.render('index', { title: 'Canditates' });
+    res.render('submitted', { title: 'Submitted page' });
   }
 });
-
-router.get('/result', function(req, res, next) {
-  res.render('result', { title: 'Result page' });
-});
-
 
 module.exports = router;

@@ -21,13 +21,16 @@ ul {
   width: 80%;
 }
 
+#topContent h2 {
+  font-size: 18vw; 
+}
+
 #topContent p {
-  font-size: 2.5vw; 
+  font-size: 4.5vw; 
 }
 
 .goldText {
   background: url(../images/gold3.jpg) repeat;
-  font-size: 20vw;
   font-family: 'Bilbo', cursive;
   margin: 0;
   -webkit-text-fill-color: transparent;
@@ -59,7 +62,7 @@ ul {
   background-size: cover;
   margin: 0 auto;
   margin-bottom: 5vw;
-  padding: 5px;
+  padding: 0.3vw;
   position: relative;
 }
 
@@ -70,7 +73,6 @@ ul {
 }
 
 .entryImg {
-  border-radius: 1vw;
   float: left;
   margin: 20px;
   margin-top: 0;

@@ -22,10 +22,12 @@ for(var i=0; i < dummyData.length ; i++){
             <h3>${dummyData[i].name}</h3>
             <p>${dummyData[i].shortinfo}</p>
         </div></a>
-        <button type="button" class="btnVote" id="${i}">Vote</button>
+        
     </div></div>
     `;
-   
+    
+    //<button type="button" class="btnVote" id="${i}">Vote</button>
+
     li.innerHTML = markup;
     console.log(li);
     document.getElementById("homepageCandidate").appendChild(li);

@@ -9,15 +9,17 @@ body {
 }
 
 /*naming content*/
+.testImg{grid-area: img;}
 #candidatePageName {grid-area: name;}
 #candidatePageShortDesc {grid-area: shortDesc;}
 #candidatePageLifeDesc {grid-area: lifeDesc;}
 #candidatePageWorkDesc {grid-area: workDesc;}
 
-#gridContent {
+.gridContent {
   display: grid;
-  grid-template-areas: 
-    'name shortDesc'
+  grid-template-areas:
+    'img name'
+    'img shortDesc'
     'lifeDesc lifeDesc'
     'workDesc workDesc';
   background-color: rgba(43, 43, 43);
@@ -32,10 +34,27 @@ a {
   text-decoration: none;
 }
   
-#gridContent p {
+.gridContent p {
   font-family: 'Bilbo', cursive;
   -webkit-text-fill-color: transparent;
   background: url(../images/gold3.jpg) repeat;
   -webkit-background-clip: text;
   font-size: 4vw;
+}
+
+.testImg {
+  min-width: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+  .gridContent {
+    grid-template-areas:
+    'img img'
+    'name shortDesc'
+    'lifeDesc lifeDesc'
+    'workDesc workDesc';
+  }
+  .testImg{
+    margin: 0 auto;
+  }
 }

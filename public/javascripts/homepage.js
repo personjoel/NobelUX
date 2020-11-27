@@ -11,27 +11,30 @@ var dummyData = [
 
 
 
+fetch('https://nobeldata.herokuapp.com/nobel')
+.then(response => response.json())
+.then(data => {
+    for(var i=0; i < data.length ; i++){
+        const li = document.createElement("p");
+        li.classList.add("homepageCandidate");
     
-for(var i=0; i < dummyData.length ; i++){
-    const li = document.createElement("p");
-    li.classList.add("homepageCandidate");
-
-    const markup = `
-    <div class="contentFrameWrap"><div class="contentFrame">
-        <a href="/candidate/${i}">
-        <div id= "homepageCandidates">
-            <img class="entryImg" src='images/test.png'>
-            <h3>${dummyData[i].name}</h3>
-            <p>${dummyData[i].shortinfo}</p>
-            <p class="info">Klicka för att rösta</p>
-        </div></a>
+        const markup = `
+        <div class="contentFrameWrap"><div class="contentFrame">
+            <a href="/candidate/${i}">
+            <div id= "homepageCandidates">
+                <img class="entryImg" src='images/test.png'>
+                <h3>${data[i].firstname} ${data[i].lastname}</h3>
+                <p>${data[i].shortinfo}</p>
+                <p class="info">Klicka för att rösta</p>
+            </div></a>
+            
+        </div></div>
+        `;
         
-    </div></div>
-    `;
+        //<button type="button" class="btnVote" id="${i}">Vote</button>
     
-    //<button type="button" class="btnVote" id="${i}">Vote</button>
-
-    li.innerHTML = markup;
-    console.log(li);
-    document.getElementById("homepageCandidate").appendChild(li);
-}
+        li.innerHTML = markup;
+        console.log(li);
+        document.getElementById("homepageCandidate").appendChild(li);
+    }
+});

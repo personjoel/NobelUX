@@ -22,7 +22,6 @@ ul {
 
 #topContent h2 {
   font-size: 16vw; 
-  
 }
 
 #topContent p {
@@ -48,16 +47,22 @@ ul {
   font-family: comfortaa;
   font-size: 4.5vw; 
   font-weight: normal;
+  margin-bottom: 1.5vw;
 }
 
 #mainContent p {
   color: rgb(204, 204, 204);
-  font-size: 15px;
+  font-size: 3.5vw;
   margin: 0; /*margin på innehåll snarare än*/
 }
 
   /*Entries & List*/
-.contentFrameWrap {
+  .homepageCandidates {
+    list-style-type: none; 
+    overflow: auto;
+  }
+
+  .contentFrameWrap {
   background: url(../images/gold3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,12 +80,13 @@ ul {
 
 .entryImg {
   float: left;
-  margin: 20px;
+  margin: 2vw;
   margin-top: 0;
   width: 250px;
 }
 
-.homepageCandidates {
-  list-style-type: none; 
-  overflow: auto;
+.info {
+  position: absolute;
+  bottom: 2vw;
+  right: 2vw;
 }

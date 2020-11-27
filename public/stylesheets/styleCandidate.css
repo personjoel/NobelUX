@@ -1,17 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
+
 body {
-    background: rgba(20, 20, 20);
-    color: rgba(255, 255, 255);
-    font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
-  }
+  background: rgba(43, 43, 43);
+  color: rgba(255, 255, 255);
+  font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*naming content*/
+.testImg{grid-area: img;}
+#candidatePageName {grid-area: name;}
+#candidatePageShortDesc {grid-area: shortDesc;}
+#candidatePageLifeDesc {grid-area: lifeDesc;}
+#candidatePageWorkDesc {grid-area: workDesc;}
+
+.gridContent {
+  display: grid;
+  grid-template-areas:
+    'img name'
+    'img shortDesc'
+    'lifeDesc lifeDesc'
+    'workDesc workDesc';
+  grid-template-columns: 400px auto;
+  background-color: rgba(43, 43, 43);
+  grid-gap: 2vw;
+  margin: 5vw;
+  padding: 4vw;
+  border: solid gold 1px;
+  border-radius: 20px;
+}
+
+a {
+  text-decoration: none;
+}
   
-  a {
-    text-decoration: none;
+.gridContent p {
+  font-family: 'Bilbo', cursive;
+  -webkit-text-fill-color: transparent;
+  background: url(../images/gold3.jpg) repeat;
+  -webkit-background-clip: text;
+  font-size: 4vw;
+}
+
+.testImg {
+  min-width: 400px;
+}
+
+@media only screen and (max-width: 800px) {
+  .gridContent {
+    grid-template-areas:
+    'img img'
+    'name shortDesc'
+    'lifeDesc lifeDesc'
+    'workDesc workDesc';
+    grid-template-columns: auto auto;
   }
-  
-  .gold-text {
-    color:#c3a343;
-    -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(transparent, transparent),
-    url(URL) repeat;
-    background: -o-linear-gradient(transparent, transparent);
+  .testImg{
+    margin: 0 auto;
   }
+}

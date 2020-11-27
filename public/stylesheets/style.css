@@ -1,33 +1,83 @@
-body {
-  background: rgba(20, 20, 20);
-  color: rgba(255, 255, 255);
-  font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
+
+
+/*general*/
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-a {
-  text-decoration: none;
+/*Top content*/
+#topFrame {
+  background: rgb(43, 43, 43);
+  border-bottom: solid gold 0.25vw;
+  width: 100%;
 }
 
-.gold-text {
-  color:#c3a343;
+#topContent {
+  margin: 0 auto;
+  padding: 20px; 
+  text-align: center;
+  width: 80%;
+}
+
+#topContent p {
+  font-size: 2.5vw; 
+}
+
+.goldText {
+  background: url(../images/gold3.jpg) repeat;
+  font-size: 20vw;
+  font-family: 'Bilbo', cursive;
+  margin: 0;
   -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient(transparent, transparent),
-  url(URL) repeat;
-  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
 }
 
 /*Main Content*/
 #mainContent {
-  background: blueviolet;
+  padding: 0;
   margin: 0 auto;
   width: 80%;
 }
 
-.homepageCandidates {
-  width: 100%;
+#mainContent h3 {
+  font-size: 20px;
+  font-weight: normal;
 }
 
-#homepageCandidate {
-  background: rgba(255, 255, 255);
-  margin-bottom: 50px;
+#mainContent p {
+  color: rgb(204, 204, 204);
+  font-size: 15px;
+  margin: 0; /*margin på innehåll snarare än*/
+}
+
+  /*Entries & List*/
+.contentFrameWrap {
+  background: url(../images/gold3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 5vw;
+  padding: 5px;
+  position: relative;
+}
+
+.contentFrame {
+  background-color: rgb(43, 43, 43);
+  overflow: auto;
+  padding: 10px;
+}
+
+.entryImg {
+  border-radius: 1vw;
+  float: left;
+  margin: 20px;
+  margin-top: 0;
+  width: 250px;
+}
+
+.homepageCandidates {
+  list-style-type: none; 
+  overflow: auto;
 }

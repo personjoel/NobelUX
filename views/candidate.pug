@@ -1,9 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p #{title}
+  div.gridContent
+    img(src="/images/test.png", alt="bild på maria" , class="testImg")
+    p(id="candidatePageName")
+    p(id="candidatePageShortDesc")
+    p(id="candidatePageLifeDesc")
+    p(id="candidatePageWorkDesc")
+    button.btnVote Vote
 
-  
-
+  script(src="/javascripts/cookies.js")
   script(src="/javascripts/candidatepage.js")

@@ -22,6 +22,7 @@ body {
     'img shortDesc'
     'lifeDesc lifeDesc'
     'workDesc workDesc';
+  grid-template-columns: 400px auto;
   background-color: rgba(43, 43, 43);
   grid-gap: 2vw;
   margin: 5vw;
@@ -46,13 +47,14 @@ a {
   min-width: 400px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .gridContent {
     grid-template-areas:
     'img img'
     'name shortDesc'
     'lifeDesc lifeDesc'
     'workDesc workDesc';
+    grid-template-columns: auto auto;
   }
   .testImg{
     margin: 0 auto;

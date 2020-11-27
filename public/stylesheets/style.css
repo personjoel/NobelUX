@@ -10,6 +10,7 @@ ul {
 /*Top content*/
 #topFrame {
   background: rgb(43, 43, 43);
+  border-bottom: solid gold 0.25vw;
   width: 100%;
 }
 
@@ -17,13 +18,16 @@ ul {
   margin: 0 auto;
   padding: 20px; 
   text-align: center;
-  width: 75%;
+  width: 80%;
 }
 
+#topContent p {
+  font-size: 2.5vw; 
+}
 
 .goldText {
   background: url(../images/gold3.jpg) repeat;
-  font-size: 200px;
+  font-size: 20vw;
   font-family: 'Bilbo', cursive;
   margin: 0;
   -webkit-text-fill-color: transparent;
@@ -37,9 +41,15 @@ ul {
   width: 80%;
 }
 
-#mainContent p {
+#mainContent h3 {
   font-size: 20px;
-  margin: 5px; /*margin på innehåll snarare än*/
+  font-weight: normal;
+}
+
+#mainContent p {
+  color: rgb(204, 204, 204);
+  font-size: 15px;
+  margin: 0; /*margin på innehåll snarare än*/
 }
 
   /*Entries & List*/
@@ -55,7 +65,16 @@ ul {
 
 .contentFrame {
   background-color: rgb(43, 43, 43);
+  overflow: auto;
   padding: 10px;
+}
+
+.entryImg {
+  border-radius: 1vw;
+  float: left;
+  margin: 20px;
+  margin-top: 0;
+  width: 250px;
 }
 
 .homepageCandidates {

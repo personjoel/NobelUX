@@ -23,7 +23,7 @@ ul {
 /*Top content*/
 #topFrame {
   background:#505050;
-  border-bottom: solid gold 0.25vw;
+  /*border-bottom: solid gold 0.25vw;*/
   width: 100%;
 }
 

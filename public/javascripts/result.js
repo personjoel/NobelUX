@@ -26,6 +26,7 @@ function myFunction(resultId) {
     });
 }
 */
+
 fetch(`https://nobeldata.herokuapp.com/nobel/4`)
 .then(response => response.json())
 .then(data => {

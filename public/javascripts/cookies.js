@@ -48,14 +48,12 @@ function myFunction() {
             if (document.cookie == 'hasVoted=false') {
                 disableButton();
                 
-                var url = 'https://nobeldata.herokuapp.com/vote';
+                var url = 'https://nobeldata.herokuapp.com/vote/' + idCandidate;
 
                 var xhr = new XMLHttpRequest();
                 xhr.open("GET", url, true);
                 xhr.setRequestHeader('Content-Type', 'application/json');
-                xhr.send(JSON.stringify({
-                    'id': idCandidate
-                }));
+                xhr.send();
                 
                 setCookie('hasVoted', 'true', 7);
                 console.log(document.cookie);

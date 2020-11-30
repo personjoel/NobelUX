@@ -7,14 +7,23 @@ body {
   margin: 0;
   padding: 0;
   width:100%;
+  font-family: 'Be Vietnam';
+  color:#EEEEE5;
 }
 
-p {
-  font-size: 3vw;
+p{
+  font-size: 2vw;
+}
+
+#homepageShortInfo {
+  margin-top:10%;
+  font-size: 1.5vw;
 }
 
 #voteDesc {
-  padding-top: 30%;
+  padding-top: 26.5%;
+  margin-bottom: -5%;
+  margin-left:5%;
 }
 
 a {
@@ -30,10 +39,10 @@ ul {
 
 /*Top content*/
 #topFrame {
-  background:#505050;
+  background:#262626;
   width: 100%;
   position:fixed;
-  margin-top:-3%;
+  margin-top:-2%;
 }
 
 #topContent {
@@ -44,7 +53,7 @@ ul {
 }
 
 #topContent h2 {
-  font-size: 16vw; 
+  font-size: 14vw; 
 }
 
 #topContent p {
@@ -72,6 +81,8 @@ ul {
 background: rgb(43, 43, 43);
 overflow: auto;
 padding: 1vw;
+margin-top: 5%;
+border-radius: 1vw;
 }
 
     /*in-frame-content*/
@@ -83,10 +94,11 @@ padding: 1vw;
 
 #mainContent h3 {
   font-family: comfortaa;
-  font-size: 4.5vw; 
+  font-size: 3vw; 
   font-weight: normal;
   margin: 2vw;
   margin-bottom: 1.5vw;
+  color:#EEEEE5;
 }
 
 .entryImg {
@@ -99,6 +111,7 @@ padding: 1vw;
 .shortInfo {
   color: rgb(204, 204, 204);
   padding-right: 1vw;
+  color:#EEEEE5;
 }
 
 .furtherInfo {

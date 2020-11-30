@@ -14,16 +14,15 @@ for(var i=0; i < dummyData.length ; i++){
     li.classList.add("homepageCandidate");
 
     const markup = `
+    <a href="/candidate/${i}">
     <div class="contentFrameWrap"><div class="contentFrame">
-        <a href="/candidate/${i}">
         <div id= "homepageCandidates">
             <img class="entryImg" src='images/test.png'>
             <h3>${dummyData[i].name}</h3>
             <p>${dummyData[i].shortinfo}</p>
-            <p class="info">Klicka för att rösta</p>
-        </div></a>
+        </div>
         
-    </div></div>
+    </div></div></a>
     `;
     
     //<button type="button" class="btnVote" id="${i}">Vote</button>

@@ -8,45 +8,37 @@ body {
   margin: 0;
 }
 
-  a {
-    text-decoration: none;
-  }
-  
-  h1.goldText {
-    font-family: 'bilbo', cursive;
-    color:#c3a343;
-    -webkit-text-fill-color: transparent;
-    background: url(../images/gold3.jpg) repeat;
-    -webkit-background-clip: text;
-    font-size: 150px;
-    text-align: center;
-  }
-  .goldText {
-    font-family: 'bilbo', cursive;
-    color:#c3a343;
-    -webkit-text-fill-color: transparent;
-    background: url(../images/gold3.jpg) repeat;
-    -webkit-background-clip: text;
-    font-size: 75px;
-    text-align: center;
-    margin: 0;
-  }
+a {
+  text-decoration: none;
+}
+
+.goldText {
+  background: url(../images/gold3.jpg) repeat;
+  font-family: 'Bilbo', cursive;
+  margin: 0;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
  
-  #topFrame {
-    background: rgb(43, 43, 43);
-    border-bottom: solid gold 0.25vw;
-    width: 100%;
-  
+#topFrame {
+  background: rgb(43, 43, 43);
+  border-bottom: solid gold 0.25vw;
+  width: 100%;
   }
 
-  #topContent {
-    width: 65%;
-    padding: 40px;
-    text-align: center;
-    margin: 0 auto; 
-  }
+#topContent {
+  width: 65%;
+  padding: 2vw;
+  text-align: center;
+  margin: 0 auto; 
+}
 
-  #mainFrame {
-    padding: 40px;
-    margin: 0 auto;
-  }
+#topContent h1 {
+  font-size: 15vw; 
+}
+
+#mainFrame {
+  padding: 4vw;
+  margin: 0 auto;
+  text-align: center;
+}

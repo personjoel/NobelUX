@@ -30,6 +30,7 @@ a {
   padding: 2vw;
   text-align: center;
   margin: 0 auto; 
+  width: 80%;
 }
 
 #topContent h1 {
@@ -40,6 +41,7 @@ a {
   padding: 4vw;
   margin: 0 auto;
   text-align: center;
+  width: 80%;
 }
 
 #info {

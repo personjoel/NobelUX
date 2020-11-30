@@ -15,6 +15,7 @@ for(var i=0; i < dummyData.length ; i++){
 
     const markup = `
     <a href="/candidate/${i}">
+<<<<<<< HEAD
     <div class="contentFrameWrap"><div class="contentFrame">
         <div id= "homepageCandidates">
             <img class="entryImg" src='images/test.png'>
@@ -23,6 +24,17 @@ for(var i=0; i < dummyData.length ; i++){
         </div>
         
     </div></div></a>
+=======
+        <div class="contentFrameWrap"><div class="contentFrame">
+            <div id= "homepageCandidates">
+                <img class="entryImg" src='images/test.png'>
+                <h3>${dummyData[i].name}</h3>
+                <p class="shortInfo">${dummyData[i].shortinfo}</p>
+                <p class="furtherInfo">Klicka för att rösta</p>
+            </div>
+        </div></div>
+    </a>
+>>>>>>> f1b85d31f749749d4d0b9cb20e1425cc33aad099
     `;
     
     //<button type="button" class="btnVote" id="${i}">Vote</button>

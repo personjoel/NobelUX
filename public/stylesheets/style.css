@@ -29,7 +29,7 @@ ul {
 
 #topContent {
   margin: 0 auto;
-  padding: 20px; 
+  padding: 2vw; 
   text-align: center;
   width: 80%;
 }
@@ -51,6 +51,30 @@ ul {
 }
 
 /*Main Content*/
+
+  /*Frames & Entries*/
+.homepageCandidates {
+  list-style-type: none; 
+  overflow: auto;
+}
+
+.contentFrameWrap {
+background: url(../images/gold3.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0 auto;
+margin-bottom: 5vw;
+padding: 0.3vw;
+position: relative;
+}
+
+.contentFrame {
+background: rgb(43, 43, 43);
+overflow: auto;
+padding: 1vw;
+}
+
+    /*in-frame-content*/
 #mainContent {
   padding: 0;
   margin: 0 auto;
@@ -61,46 +85,30 @@ ul {
   font-family: comfortaa;
   font-size: 4.5vw; 
   font-weight: normal;
+  margin: 2vw;
   margin-bottom: 1.5vw;
-}
-
-#mainContent p {
-  color: rgb(204, 204, 204);
-  font-size: 3.5vw;
-  margin: 0; /*margin på innehåll snarare än*/
-}
-
-  /*Entries & List*/
-  .homepageCandidates {
-    list-style-type: none; 
-    overflow: auto;
-  }
-
-  .contentFrameWrap {
-  background: url(../images/gold3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 auto;
-  margin-bottom: 5vw;
-  padding: 0.3vw;
-  position: relative;
-}
-
-.contentFrame {
-  background-color: rgb(43, 43, 43);
-  overflow: auto;
-  padding: 10px;
 }
 
 .entryImg {
   float: left;
   margin: 2vw;
   margin-top: 0;
-  width: 250px;
+  width: 25vw;
 }
 
-.info {
+.shortInfo {
+  color: rgb(204, 204, 204);
+  padding-right: 1vw;
+}
+
+.furtherInfo {
+  color: rgb(97, 97, 97);
   position: absolute;
   bottom: 2vw;
   right: 2vw;
+}
+
+.shortInfo, .furtherInfo {
+  font-size: 3.5vw;
+  margin: 0;
 }

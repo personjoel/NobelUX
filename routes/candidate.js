@@ -30,7 +30,7 @@ router.get('/:id', function(req, res, next) {
   if (dateNow >= date) {
     res.render('result', { title: 'Results' });
   } else {
-    res.render('candidate', { title: 'Ind. candidate page' });
+    res.render('candidate', { title: 'Ind. candidate page', id: req.params.id });
   }
 });
 

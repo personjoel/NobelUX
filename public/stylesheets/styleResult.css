@@ -10,3 +10,37 @@ a {
   text-decoration: none;
   color: white;
 }
+
+/*Top content*/
+#topFrame {
+  background: rgb(43, 43, 43);
+  border-bottom: solid gold 0.25vw;
+  width: 100%;
+}
+
+#topContent {
+  margin: 0 auto;
+  padding: 2vw; 
+  text-align: center;
+  width: 80%;
+}
+
+#topContent h2 {
+  font-size: 16vw; 
+}
+
+#topContent p {
+  font-size: 4.5vw; 
+}
+
+.goldText {
+  background: url(../images/gold3.jpg) repeat;
+  font-family: 'Bilbo', cursive;
+  margin: 0;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.winnerImg {
+  width: 25vw;
+}

@@ -2,8 +2,13 @@ extends layout
 
 block content
 
+  link(rel='stylesheet', href='/stylesheets/styleResult.css')
+
   #topFrame
     #topContent
       h2.goldText Vinnare!
 
-  img.winnerImg(src='images/test.png')
+  #mainContent
+    h3#name
+    p#content
+    script(src='javascripts/result.js')

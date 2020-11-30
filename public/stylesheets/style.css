@@ -16,14 +16,15 @@ p{
 }
 
 #homepageShortInfo {
-  margin-top:10%;
-  font-size: 1.5vw;
+  margin-top:5%;
+  font-size: 1.3vw;
 }
 
 #voteDesc {
   padding-top: 26.5%;
   margin-bottom: -5%;
-  margin-left:5%;
+  margin:0 auto;
+  text-align: center;
 }
 
 a {
@@ -39,7 +40,7 @@ ul {
 
 /*Top content*/
 #topFrame {
-  background:#262626;
+  background:#242424;
   width: 100%;
   position:fixed;
   margin-top:-2%;
@@ -74,7 +75,7 @@ ul {
 
   /*Frames & Entries*/
 .homepageCandidates {
-  margin-top: 1%;
+  margin-top: -4%;
   list-style-type: none; 
   overflow: auto;
 }
@@ -101,8 +102,12 @@ border-radius: 1vw;
   margin: 2vw;
   margin-bottom: 1.5vw;
   color:#EEEEE5;
+  padding-left:5%;
 }
 
+h3{
+  margin-top: 5%;
+}
 .entryImg {
   float: left;
   margin: 2vw;

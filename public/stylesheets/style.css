@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
 
-
 /*general*/
 ul {
   list-style-type: none;
@@ -21,13 +20,16 @@ ul {
   width: 80%;
 }
 
+#topContent h2 {
+  font-size: 16vw; 
+}
+
 #topContent p {
-  font-size: 2.5vw; 
+  font-size: 4.5vw; 
 }
 
 .goldText {
   background: url(../images/gold3.jpg) repeat;
-  font-size: 20vw;
   font-family: 'Bilbo', cursive;
   margin: 0;
   -webkit-text-fill-color: transparent;
@@ -42,24 +44,31 @@ ul {
 }
 
 #mainContent h3 {
-  font-size: 20px;
+  font-family: comfortaa;
+  font-size: 4.5vw; 
   font-weight: normal;
+  margin-bottom: 1.5vw;
 }
 
 #mainContent p {
   color: rgb(204, 204, 204);
-  font-size: 15px;
+  font-size: 3.5vw;
   margin: 0; /*margin på innehåll snarare än*/
 }
 
   /*Entries & List*/
-.contentFrameWrap {
+  .homepageCandidates {
+    list-style-type: none; 
+    overflow: auto;
+  }
+
+  .contentFrameWrap {
   background: url(../images/gold3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   margin-bottom: 5vw;
-  padding: 5px;
+  padding: 0.3vw;
   position: relative;
 }
 
@@ -70,14 +79,14 @@ ul {
 }
 
 .entryImg {
-  border-radius: 1vw;
   float: left;
-  margin: 20px;
+  margin: 2vw;
   margin-top: 0;
   width: 250px;
 }
 
-.homepageCandidates {
-  list-style-type: none; 
-  overflow: auto;
+.info {
+  position: absolute;
+  bottom: 2vw;
+  right: 2vw;
 }

@@ -27,7 +27,6 @@ a {
   }
 
 #topContent {
-  width: 65%;
   padding: 2vw;
   text-align: center;
   margin: 0 auto; 
@@ -40,5 +39,10 @@ a {
 #mainFrame {
   padding: 4vw;
   margin: 0 auto;
+  text-align: center;
+}
+
+#info {
+  color: rgb(204, 204, 204);
   text-align: center;
 }

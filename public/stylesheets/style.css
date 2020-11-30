@@ -9,6 +9,14 @@ body {
   width:100%;
 }
 
+p {
+  font-size: 3vw;
+}
+
+#voteDesc {
+  padding-top: 30%;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -23,8 +31,9 @@ ul {
 /*Top content*/
 #topFrame {
   background:#505050;
-  /*border-bottom: solid gold 0.25vw;*/
   width: 100%;
+  position:fixed;
+  margin-top:-3%;
 }
 
 #topContent {
@@ -54,18 +63,9 @@ ul {
 
   /*Frames & Entries*/
 .homepageCandidates {
+  margin-top: 1%;
   list-style-type: none; 
   overflow: auto;
-}
-
-.contentFrameWrap {
-background: url(../images/gold3.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-margin: 0 auto;
-margin-bottom: 5vw;
-padding: 0.3vw;
-position: relative;
 }
 
 .contentFrame {
@@ -78,7 +78,7 @@ padding: 1vw;
 #mainContent {
   padding: 0;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 #mainContent h3 {
@@ -93,7 +93,7 @@ padding: 1vw;
   float: left;
   margin: 2vw;
   margin-top: 0;
-  width: 25vw;
+  width: 30vw;
 }
 
 .shortInfo {

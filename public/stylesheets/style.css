@@ -56,7 +56,6 @@ ul {
 
   /*Frames & Entries*/
 .homepageCandidates {
-  margin-top: 3%;
   list-style-type: none; 
   overflow: auto;
 }
@@ -93,8 +92,6 @@ border-radius: 1vw;
   font-style: italic;
   font-weight: lighter;
 }
-
-
 
 .entryImg {
   float: left;

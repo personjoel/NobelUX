@@ -10,7 +10,12 @@ body {
 }
 
 /*naming content*/
-.testImg{grid-area: img;}
+.testImg{
+  grid-area: img; 
+  border: solid gold 2px; 
+  min-width: 400px; 
+  border-radius: 10px;
+}
 #candidatePageName {grid-area: name;}
 #candidatePageShortDesc {grid-area: shortDesc;}
 #candidatePageLifeDesc {grid-area: lifeDesc;}
@@ -26,6 +31,7 @@ body {
   grid-template-columns: 400px auto;
   background-color: rgba(43, 43, 43);
   grid-gap: 2vw;
+  column-gap: 7vw;
   margin: 5vw;
   padding: 4vw;
   border: solid gold 1px;
@@ -44,15 +50,16 @@ a {
   font-size: 4vw;
 }
 
-.testImg {
+/*.testImg {
   min-width: 400px;
-}
+}*/
 
 .btnVote {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 10vw;
+  height: 5vh;
+  min-height: 35px;
   width: 100%;
   background-color: rgb(36, 102, 3);
   font-size: 3vw;
@@ -68,7 +75,8 @@ a {
 }*/
 
 #candidatePageLifeDesc, #candidatePageWorkDesc {
-  font-family: 'Playfair Display', serif;
+  /*font-family: 'Playfair Display', serif;*/
+  font-family: "Alfred Regular", serif;
   color: antiquewhite;
   font-size: 4vw;
 }
@@ -81,8 +89,10 @@ a {
     'lifeDesc lifeDesc'
     'workDesc workDesc';
     grid-template-columns: auto auto;
+    column-gap: 2vw;
   }
   .testImg{
     margin: 0 auto;
+    min-width: 80vw;
   }
 }

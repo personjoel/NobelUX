@@ -13,7 +13,7 @@ body {
   background:#212121;
   width: 100%;
   position:fixed;
-  margin-top:-7%;
+  margin-top:-32%;
   height:20vw;
 }
 
@@ -21,11 +21,18 @@ body {
   margin: 0 auto;
   padding: 2vw; 
   text-align: center;
-  width: 80%;
+  width: 90%;
 }
 
 #topContent h2 {
-  font-size: 8vw; 
+  font-size: 8vw;
+  margin-right: 4%; 
+}
+
+#topContent a {
+  font-size: 10vw; 
+  float:left;
+  margin-top: 0%;
 }
 
 .goldText {
@@ -63,6 +70,7 @@ body {
   column-gap: 7vw;
   margin: 5vw;
   padding: 4vw;
+  margin-top: 30vw;
   border: solid gold 1px;
   margin-bottom: 15%;
 }

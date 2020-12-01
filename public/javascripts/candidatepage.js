@@ -9,7 +9,7 @@ console.log(id);
 
 
 document.getElementById("candidatePageName").innerHTML= dummyData[id].name;
-document.getElementById("candidatePageShortDesc").innerHTML= dummyData[id].shortinfo;
+//document.getElementById("candidatePageShortDesc").innerHTML= dummyData[id].shortinfo;
 document.getElementById("candidatePageLifeDesc").innerHTML= dummyData[id].liv;
 document.getElementById("candidatePageWorkDesc").innerHTML= dummyData[id].liv;
 

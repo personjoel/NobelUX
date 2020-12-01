@@ -19,7 +19,7 @@ for(var i=0; i < dummyData.length ; i++){
         <div id= "homepageCandidates">
             <img class="entryImg" src='images/test.png'>
             <h3>${dummyData[i].name}</h3>
-            <p>${dummyData[i].shortinfo}</p>
+            <p id="homepageShortInfo">${dummyData[i].shortinfo}</p>
         </div>
         
     </div></div></a>

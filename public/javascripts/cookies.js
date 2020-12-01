@@ -31,19 +31,11 @@ function getCookie(cname) {
 }
 
 function myFunction() {
-    /**
-    $(".btnVote").on('click', function (event) {
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-        console.log('funka jävla äckel skit')
-        if (document.cookie == 'hasVoted=false') {
-            disableButton();
-            setCookie('hasVoted', 'true', 7);
-            console.log(document.cookie);
-        }
-    });
-    */
     
+    var url = window.location.pathname;
+    var idCandidate = url.substring(url.lastIndexOf('/') + 1);
+    console.log(id);
+
     var list = document.getElementsByClassName("btnVote");
     console.log(list);
 
@@ -55,6 +47,14 @@ function myFunction() {
             
             if (document.cookie == 'hasVoted=false') {
                 disableButton();
+                
+                var url = 'https://nobeldata.herokuapp.com/vote/' + idCandidate;
+
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", url, true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.send();
+                
                 setCookie('hasVoted', 'true', 7);
                 console.log(document.cookie);
             }

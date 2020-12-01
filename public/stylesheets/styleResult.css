@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
+
 body {
   background: rgba(20, 20, 20);
   color: rgba(255, 255, 255);
@@ -14,7 +16,7 @@ a {
 /*Top content*/
 #topFrame {
   background: rgb(43, 43, 43);
-  border-bottom: solid gold 0.25vw;
+  margin-bottom: 2vw;
   width: 100%;
 }
 
@@ -41,6 +43,30 @@ a {
   -webkit-background-clip: text;
 }
 
-.winnerImg {
-  width: 25vw;
+/*Main Content*/
+#mainContent {
+  padding: 0;
+  margin: 0 auto;
+  width: 50%;
+}
+
+  /*in-frame-content*/
+#imgCandidate {
+  border: solid gold 0.25vw;
+  width: 100%;
+}
+
+#name {
+  font-family: comfortaa;
+  font-size: 6vw; 
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 1.5vw;
+  text-align: center;
+}
+
+#content {
+  color: rgb(204, 204, 204);
+  padding-right: 1vw;
+  text-align: center;
 }

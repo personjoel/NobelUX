@@ -1,12 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
 
 body {
   background: #1E1E1E;
   color: rgba(255, 255, 255);
-  font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   width:100%;
+  font-family: 'Be Vietnam';
+  color:#EEEEE5;
+}
+
+#homepageShortInfo {
+  margin-top:5%;
+  font-size: 1.3vw;
+}
+
+#voteDesc {
+  padding-top: 26.5%;
+  margin-bottom: 1%;
+  margin:0 auto;
+  text-align: center;
+  font-size: 1.5vw;
+  width: 95%;
 }
 
 a {
@@ -22,9 +36,11 @@ ul {
 
 /*Top content*/
 #topFrame {
-  background:#505050;
-  /*border-bottom: solid gold 0.25vw;*/
+  background:#242424;
   width: 100%;
+  position:fixed;
+  margin-top:-2%;
+  height:20vw;
 }
 
 #topContent {
@@ -35,7 +51,7 @@ ul {
 }
 
 #topContent h2 {
-  font-size: 16vw; 
+  font-size: 8vw; 
 }
 
 #topContent p {
@@ -44,8 +60,9 @@ ul {
 
 .goldText {
   background: url(../images/gold3.jpg) repeat;
-  font-family: 'Bilbo', cursive;
+  font-family: 'Amita';
   margin: 0;
+  margin-top: 1.7%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -54,51 +71,51 @@ ul {
 
   /*Frames & Entries*/
 .homepageCandidates {
+  margin-top: 3%;
   list-style-type: none; 
   overflow: auto;
-}
-
-.contentFrameWrap {
-background: url(../images/gold3.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-margin: 0 auto;
-margin-bottom: 5vw;
-padding: 0.3vw;
-position: relative;
 }
 
 .contentFrame {
 background: rgb(43, 43, 43);
 overflow: auto;
 padding: 1vw;
+margin-top: 5%;
+border-radius: 1vw;
 }
 
     /*in-frame-content*/
 #mainContent {
   padding: 0;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 #mainContent h3 {
   font-family: comfortaa;
-  font-size: 4.5vw; 
+  font-size: 3vw; 
   font-weight: normal;
   margin: 2vw;
   margin-bottom: 1.5vw;
+  color:#EEEEE5;
+  padding-left:5%;
 }
 
+h3{
+  margin-top: 5%;
+}
 .entryImg {
   float: left;
   margin: 2vw;
   margin-top: 0;
-  width: 25vw;
+  width: 30vw;
+  height: 32vw;
 }
 
 .shortInfo {
   color: rgb(204, 204, 204);
   padding-right: 1vw;
+  color:#EEEEE5;
 }
 
 .furtherInfo {

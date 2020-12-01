@@ -27,10 +27,10 @@ a {
   }
 
 #topContent {
-  width: 65%;
   padding: 2vw;
   text-align: center;
   margin: 0 auto; 
+  width: 80%;
 }
 
 #topContent h1 {
@@ -40,5 +40,11 @@ a {
 #mainFrame {
   padding: 4vw;
   margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+#info {
+  color: rgb(204, 204, 204);
   text-align: center;
 }

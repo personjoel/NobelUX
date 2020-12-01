@@ -2,11 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
 body {
-  background: #1E1E1E;
+  background: #1A1A1A;
   color: rgba(255, 255, 255);
   font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+#backIcon{
+  width:7vw;
 }
 
 #topFrame {
@@ -26,7 +30,7 @@ body {
 
 #topContent h2 {
   font-size: 8vw;
-  margin-right: 4%; 
+  margin-right: 7.8%; 
 }
 
 #topContent a {
@@ -48,14 +52,21 @@ body {
 /*naming content*/
 .testImg{
   grid-area: img; 
-  border: solid gold 2px; 
+  /*border: solid gold 2px; */
+  border-radius: 1vw;
   min-width: 400px; 
   border-radius: 10px;
+  float:right;
 }
 #candidatePageName {grid-area: name;}
 #candidatePageShortDesc {grid-area: shortDesc;}
 #candidatePageLifeDesc {grid-area: lifeDesc;}
 #candidatePageWorkDesc {grid-area: workDesc;}
+
+#candidatePageName{
+  font-family: 'Be Vietnam';
+  margin-top: -3%;
+}
 
 .gridContent {
   display: grid;
@@ -65,18 +76,25 @@ body {
     'lifeDesc lifeDesc'
     'workDesc workDesc';
   grid-template-columns: 400px auto;
-  background-color: rgba(43, 43, 43);
+  background-color:#292929;
   grid-gap: 2vw;
   column-gap: 7vw;
   margin: 5vw;
   padding: 4vw;
   margin-top: 30vw;
-  border: solid gold 1px;
-  margin-bottom: 15%;
+  /*border: solid gold 1px;*/
+  border-radius: 1vw;
+  margin-bottom: 17%;
 }
 
 a {
   text-decoration: none;
+}
+
+#candidatePageShortDesc{
+  float:left;
+  font-size: 1vw;
+  font-family: 'Be Vietnam';
 }
   
 
@@ -91,8 +109,14 @@ a {
   height: 5vh;
   min-height: 35px;
   width: 100%;
-  background-color: rgb(36, 102, 3);
+  background-color: #212121;
   font-size: 3vw;
+  background: url(../images/gold3.jpg) repeat;
+  font-family: 'Amita';
+  margin: 0;
+  margin-top: 2.5%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 /*.btnVote:active {
@@ -104,11 +128,20 @@ a {
   transform: translateY(-50%);
 }*/
 
-#candidatePageLifeDesc, #candidatePageWorkDesc {
+#candidatePageLifeDesc {
   /*font-family: 'Playfair Display', serif;*/
-  font-family: "Alfred Regular", serif;
-  color: antiquewhite;
-  font-size: 4vw;
+  font-family: 'Be Vietnam';
+  color:#EEEEE5;
+  font-size: 1.2vw;
+  margin-top: 4%;
+}
+
+#candidatePageWorkDesc {
+  /*font-family: 'Playfair Display', serif;*/
+  font-family: 'Be Vietnam';
+  color:#EEEEE5;
+  font-size: 1.2vw;
+  margin-top: 0%;
 }
 
 @media only screen and (max-width: 800px) {

@@ -123,7 +123,7 @@ a {
 .btnVote {
   background: none;
   border: none;
-  font-size: 7vw;
+  font-size: 6vw;
   width: 100%;
   
   background: #212121;
@@ -132,7 +132,7 @@ a {
   -webkit-background-clip: text;
 }
 
-/* Denna version ger svart bakgrund med guld font på "rösta-footern"
+/* Denna version ger svart bakgrund med guld font på "rösta-footern".. ser dock inte 100% interaktiv ut?
 .footer {
   background:#212121;
   border-top: solid gold 0.2vw;

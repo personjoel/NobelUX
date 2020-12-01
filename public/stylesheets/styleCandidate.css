@@ -106,17 +106,22 @@ a {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 5vh;
+  height: 15vw;
   min-height: 35px;
   width: 100%;
-  background-color: #212121;
-  font-size: 3vw;
+  font-size: 6vw;
+  font-weight: bold;
   background: url(../images/gold3.jpg) repeat;
   font-family: 'Amita';
   margin: 0;
   margin-top: 2.5%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+.footer {
+  background-color: #212121;
+  
 }
 
 /*.btnVote:active {

@@ -88,12 +88,13 @@ border-radius: 1vw;
 #homepageShortInfo {
   color: #a1a1a1;
   margin: 0;
-  font-size: 4vw;
+  font-size: 3.9vw;
   font-style: italic;
   font-weight: lighter;
 }
 
 .entryImg {
+  border: solid gold 0.2vw;
   float: left;
   margin: 2vw;
   margin-top: 0;

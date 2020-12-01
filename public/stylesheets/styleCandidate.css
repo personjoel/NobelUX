@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
+/*General*/
 body {
   background: #1A1A1A;
   color: rgba(255, 255, 255);
@@ -9,6 +10,11 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+/*Header*/
 #topFrame {
   background:#212121;
   width: 100%;
@@ -31,12 +37,6 @@ body {
   left: 5.2vw;
   top: 6vw;
   width:7vw;
-}
-
-#topContent a {
-  font-size: 10vw; 
-  float:left;
-  margin-top: 0%;
 }
 
 .goldText {
@@ -85,66 +85,36 @@ body {
   padding: 4vw;
 }
 
-a {
-  text-decoration: none;
-}
-
 #candidatePageShortDesc{
   float:left;
   font-size: 1vw;
   font-family: 'Be Vietnam';
 }
-  
-
-/*.testImg {
-  min-width: 400px;
-}*/
-
-.btnVote {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  height: 15vw;
-  min-height: 35px;
-  width: 100%;
-  font-size: 6vw;
-  font-weight: bold;
-  background: url(../images/gold3.jpg) repeat;
-  font-family: 'Amita';
-  margin: 0;
-  margin-top: 2.5%;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-.footer {
-  background-color: #212121;
-  
-}
-
-/*.btnVote:active {
-  background-color: saddlebrown;
-}*/
-
-/*.footer button {
-  margin-left: 50%;
-  transform: translateY(-50%);
-}*/
 
 #candidatePageLifeDesc {
-  /*font-family: 'Playfair Display', serif;*/
   font-family: 'Be Vietnam';
   color:#EEEEE5;
-  font-size: 1.2vw;
+  font-size: 4vw;
   margin-top: 4%;
 }
 
 #candidatePageWorkDesc {
-  /*font-family: 'Playfair Display', serif;*/
   font-family: 'Be Vietnam';
   color:#EEEEE5;
-  font-size: 1.2vw;
+  font-size: 4vw;
   margin-top: 0%;
+}
+
+/*Footer*/
+.footer {
+  background: greenyellow/*#212121*/;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.btnVote {
+  margin: 0;
 }
 
 @media only screen and (max-width: 800px) {

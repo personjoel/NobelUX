@@ -1,6 +1,6 @@
 
 body {
-  background:#212121;
+  background: #1A1A1A;
   color: rgba(255, 255, 255);
   margin: 0;
   padding: 0;
@@ -31,7 +31,7 @@ ul {
 
 /*Top content*/
 #topFrame {
-  background: #1A1A1A;
+  background:#212121;
   width: 100%;
   position:fixed;
   margin-top:-2%;
@@ -72,7 +72,7 @@ ul {
 }
 
 .contentFrame {
-background: #1A1A1A;
+background:#212121;
 overflow: auto;
 padding: 1vw;
 margin-top: 5%;

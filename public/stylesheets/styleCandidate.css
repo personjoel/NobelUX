@@ -50,24 +50,10 @@ a {
 
 
 /*naming content*/
-.testImg{
-  border: solid gold 0.2vw;
-  grid-area: img; 
-  border-radius: 1vw;
-  min-width: 400px; 
-  border-radius: 10px;
-  float:right;
-}
-
 #candidatePageName {grid-area: name;}
 #candidatePageShortDesc {grid-area: shortDesc;}
 #candidatePageLifeDesc {grid-area: lifeDesc;}
 #candidatePageWorkDesc {grid-area: workDesc;}
-
-#candidatePageName{
-  font-family: 'Be Vietnam';
-  margin-top: -3%;
-}
 
 .gridContent {
   display: grid;
@@ -87,23 +73,47 @@ a {
   padding: 4vw;
 }
 
-#candidatePageShortDesc{
-  float:left;
-  font-size: 1vw;
+.testImg{
+  border: solid gold 0.2vw;
+  grid-area: img; 
+  border-radius: 1vw;
+  width: 105%; 
+  border-radius: 10px;
+  float:right;
+}
+
+#candidatePageName{
   font-family: 'Be Vietnam';
+  font-size: 5.5vw;
+  letter-spacing: 0.2vw;
+  margin: 0;
+  margin-top: -2vw;
+  margin-left: -2vw;
+}
+
+#candidatePageShortDesc{
+  color:#dbdbdb;
+  float:left;
+  font-size: 4.4vw;
+  font-family: 'Be Vietnam';
+  font-style: italic;
+  margin: 0;
+  margin-left: -2vw;
 }
 
 #candidatePageLifeDesc {
-  font-family: 'Be Vietnam';
   color:#c7c7c7;
-  font-size: 4vw;
+  font-family: 'Be Vietnam';
+  font-size: 4.5vw;
+  line-height: 7vw;
   margin-top: 4%;
 }
 
 #candidatePageWorkDesc {
-  font-family: 'Be Vietnam';
   color:#c7c7c7;
-  font-size: 4vw;
+  font-family: 'Be Vietnam';
+  font-size: 4.5vw;
+  line-height: 7vw;
   margin-top: 0%;
 }
 

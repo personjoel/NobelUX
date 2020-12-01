@@ -16,6 +16,7 @@ a {
 /*Top content*/
 #topFrame {
   background: rgb(43, 43, 43);
+  border-bottom: solid gold 0.2vw;
   margin-bottom: 2vw;
   width: 100%;
 }
@@ -43,28 +44,27 @@ a {
   -webkit-background-clip: text;
 }
 
-/*Main Content*/
-#mainContent {
-  padding: 0;
-  margin: 0 auto;
-  width: 50%;
-}
-
-  /*in-frame-content*/
 #imgCandidate {
   border: solid gold 0.25vw;
-  width: 100%;
+  width: 60%;
 }
 
 #name {
   font-family: comfortaa;
   font-size: 6vw; 
   font-weight: normal;
-  margin: 0;
-  margin-bottom: 1.5vw;
+  margin: 1.5vw;
   text-align: center;
 }
 
+/*Main Content*/
+#mainContent {
+  padding: 0;
+  margin: 0 auto;
+  width: 70%;
+}
+
+  /*in-frame-content*/
 #content {
   color: rgb(204, 204, 204);
   padding-right: 1vw;

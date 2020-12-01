@@ -9,29 +9,28 @@ body {
   padding: 0;
 }
 
-#backIcon{
-  width:7vw;
-}
-
 #topFrame {
   background:#212121;
   width: 100%;
   position:fixed;
-  margin-top:-32%;
-  height:20vw;
+  top: 0;
 }
 
-#topContent {
+#topFrame h2 {
+  font-size: 8vw; 
   margin: 0 auto;
   padding: 2vw; 
+  padding-bottom: 0;
   text-align: center;
   width: 90%;
-  background:#212121;
 }
 
-#topContent h2 {
-  font-size: 8vw;
-  margin-right: 7.8%; 
+#backIcon{
+  float: left;
+  position: absolute;
+  left: 5.2vw;
+  top: 6vw;
+  width:7vw;
 }
 
 #topContent a {

@@ -9,15 +9,6 @@ body {
   color:#EEEEE5;
 }
 
-#voteDesc {
-  padding-top: 26.5%;
-  margin-bottom: 1%;
-  margin:0 auto;
-  text-align: center;
-  font-size: 3vw;
-  width: 75%;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -34,24 +25,15 @@ ul {
   background:#212121;
   width: 100%;
   position:fixed;
-  margin-top:-2%;
-  height:20vw;
-  background:#212121;
 }
 
-#topContent {
+#topFrame h2 {
+  font-size: 8vw; 
   margin: 0 auto;
   padding: 2vw; 
+  padding-bottom: 0;
   text-align: center;
   width: 90%;
-}
-
-#topContent h2 {
-  font-size: 8vw; 
-}
-
-#topContent p {
-  font-size: 4.5vw; 
 }
 
 .goldText {
@@ -64,6 +46,13 @@ ul {
 }
 
 /*Main Content*/
+#voteDesc {
+  padding-top: 22vw;
+  margin:0 auto;
+  text-align: center;
+  font-size: 4vw; 
+  width: 75%;
+}
 
   /*Frames & Entries*/
 .homepageCandidates {

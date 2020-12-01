@@ -78,7 +78,7 @@ border-radius: 1vw;
 
 #mainContent h3 {
   font-family: 'Be Vietnam';
-  font-size: 3vw; 
+  font-size: 5.5vw; 
   font-weight: normal;
   margin: 2vw;
   margin-bottom: 1.5vw;
@@ -87,15 +87,15 @@ border-radius: 1vw;
 }
 
 #homepageShortInfo {
-  margin-top:5%;
-  font-size: 1vw;
+  color: #a1a1a1;
+  margin: 0;
+  font-size: 4vw;
   font-style: italic;
   font-weight: lighter;
 }
 
-h3{
-  margin-top: 5%;
-}
+
+
 .entryImg {
   float: left;
   margin: 2vw;

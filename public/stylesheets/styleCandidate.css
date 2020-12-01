@@ -51,12 +51,14 @@ a {
 
 /*naming content*/
 .testImg{
+  border: solid gold 0.2vw;
   grid-area: img; 
   border-radius: 1vw;
   min-width: 400px; 
   border-radius: 10px;
   float:right;
 }
+
 #candidatePageName {grid-area: name;}
 #candidatePageShortDesc {grid-area: shortDesc;}
 #candidatePageLifeDesc {grid-area: lifeDesc;}
@@ -93,29 +95,65 @@ a {
 
 #candidatePageLifeDesc {
   font-family: 'Be Vietnam';
-  color:#EEEEE5;
+  color:#c7c7c7;
   font-size: 4vw;
   margin-top: 4%;
 }
 
 #candidatePageWorkDesc {
   font-family: 'Be Vietnam';
-  color:#EEEEE5;
+  color:#c7c7c7;
   font-size: 4vw;
   margin-top: 0%;
 }
 
 /*Footer*/
+
+/*Denna version har full guld bakgrund.. kanske ser mer interaktiv ut?? Potentiellt byta bakgrund??*/
 .footer {
-  background: greenyellow/*#212121*/;
+  background: url(../images/gold3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: fixed;
   bottom: 0;
+  text-align: center;
   width: 100%;
 }
 
 .btnVote {
-  margin: 0;
+  background: none;
+  border: none;
+  font-size: 7vw;
+  width: 100%;
+  
+  background: #212121;
+  font-family: 'Amita';
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
+
+/* Denna version ger svart bakgrund med guld font på "rösta-footern"
+.footer {
+  background:#212121;
+  border-top: solid gold 0.2vw;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.btnVote {
+  background: none;
+  border: none;
+  font-size: 7vw;
+  width: 100%;
+  
+  background: url(../images/gold3.jpg) repeat;
+  font-family: 'Amita';
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+*/
 
 @media only screen and (max-width: 800px) {
   .gridContent {

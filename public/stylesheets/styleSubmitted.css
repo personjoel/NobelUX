@@ -37,6 +37,7 @@ a {
   font-size: 15vw; 
 }
 
+/*Mid content*/
 #mainFrame {
   padding: 4vw;
   margin: 0 auto;
@@ -46,5 +47,6 @@ a {
 
 #info {
   color: rgb(204, 204, 204);
+  font-family: 'Be Vietnam';
   text-align: center;
 }

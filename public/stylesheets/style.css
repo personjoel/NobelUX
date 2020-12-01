@@ -47,11 +47,12 @@ ul {
 
 /*Main Content*/
 #voteDesc {
+  color:#dbdbdb;
   padding-top: 22vw;
   margin:0 auto;
   text-align: center;
-  font-size: 4vw; 
-  width: 75%;
+  font-size: 4.4vw; 
+  width: 85%;
 }
 
   /*Frames & Entries*/

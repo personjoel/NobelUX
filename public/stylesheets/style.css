@@ -1,6 +1,6 @@
 
 body {
-  background: #1E1E1E;
+  background:#212121;
   color: rgba(255, 255, 255);
   margin: 0;
   padding: 0;
@@ -31,7 +31,7 @@ ul {
 
 /*Top content*/
 #topFrame {
-  background:#242424;
+  background: #1A1A1A;
   width: 100%;
   position:fixed;
   margin-top:-2%;
@@ -72,7 +72,7 @@ ul {
 }
 
 .contentFrame {
-background: rgb(43, 43, 43);
+background: #1A1A1A;
 overflow: auto;
 padding: 1vw;
 margin-top: 5%;
@@ -98,7 +98,9 @@ border-radius: 1vw;
 
 #homepageShortInfo {
   margin-top:5%;
-  font-size: 1.3vw;
+  font-size: 1vw;
+  font-style: italic;
+  font-weight: lighter;
 }
 
 h3{

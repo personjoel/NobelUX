@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
 body {
-  background: rgba(43, 43, 43);
+  background: #1E1E1E;
   color: rgba(255, 255, 255);
   font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0;
@@ -48,19 +48,24 @@ a {
   min-width: 400px;
 }
 
-.footer {
+.btnVote {
   position: fixed;
   left: 0;
   bottom: 0;
   height: 10vw;
   width: 100%;
-  background-color: salmon;
+  background-color: rgb(36, 102, 3);
+  font-size: 3vw;
 }
 
-.footer button {
+/*.btnVote:active {
+  background-color: saddlebrown;
+}*/
+
+/*.footer button {
   margin-left: 50%;
   transform: translateY(-50%);
-}
+}*/
 
 #candidatePageLifeDesc, #candidatePageWorkDesc {
   font-family: 'Playfair Display', serif;

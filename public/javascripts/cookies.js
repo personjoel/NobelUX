@@ -52,11 +52,24 @@ function myFunction() {
 
                 var xhr = new XMLHttpRequest();
                 xhr.open("GET", url, true);
+                xhr.onreadystatechange = function () {
+                    
+                    if(xhr.readyState === XMLHttpRequest.DONE) {
+                      var status = xhr.status;
+                      if (status === 200) {
+                        window.location.replace('/submitted')
+                      }
+                    }
+                  };
+                
                 xhr.setRequestHeader('Content-Type', 'application/json');
                 xhr.send();
+
+                
                 
                 setCookie('hasVoted', 'true', 7);
                 console.log(document.cookie);
+                
             }
         });
         

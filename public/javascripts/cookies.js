@@ -31,10 +31,6 @@ function getCookie(cname) {
 }
 
 function myFunction() {
-    
-    var url = window.location.pathname;
-    var idCandidate = url.substring(url.lastIndexOf('/') + 1);
-    console.log(id);
 
     var list = document.getElementsByClassName("btnVote");
     console.log(list);
@@ -47,28 +43,23 @@ function myFunction() {
             
             if (document.cookie == 'hasVoted=false') {
                 disableButton();
-                
-                var url = 'https://nobeldata.herokuapp.com/vote/' + idCandidate;
+                var requestUrl = window.location.origin + '/url/0';
 
-                var xhr = new XMLHttpRequest();
-                xhr.open("GET", url, true);
-                xhr.onreadystatechange = function () {
+                var urlXhr = new XMLHttpRequest();
+                urlXhr.open('GET', requestUrl, true);
+                urlXhr.onreadystatechange = function () {
                     
-                    if(xhr.readyState === XMLHttpRequest.DONE) {
-                      var status = xhr.status;
+                    if(urlXhr.readyState === XMLHttpRequest.DONE) {
+                      var status = urlXhr.status;
                       if (status === 200) {
-                        window.location.replace('/submitted')
+                        console.log(urlXhr.response)
+                        voteFunction(urlXhr.response);
                       }
                     }
                   };
                 
-                xhr.setRequestHeader('Content-Type', 'application/json');
-                xhr.send();
-
-                
-                
-                setCookie('hasVoted', 'true', 7);
-                console.log(document.cookie);
+                urlXhr.setRequestHeader('Content-Type', 'application/json');
+                urlXhr.send();
                 
             }
         });
@@ -77,6 +68,37 @@ function myFunction() {
     
 }
 
+function voteFunction(url) {
+    var urlCheck = window.location.pathname;
+    var idCandidate = urlCheck.substring(urlCheck.lastIndexOf('/') + 1);
+    console.log(id);
+    
+    console.log(url);
+
+    url = url + idCandidate;
+
+    
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.onreadystatechange = function () {
+                    
+    if(xhr.readyState === XMLHttpRequest.DONE) {
+        var status = xhr.status;
+        if (status === 200) {
+            setCookie('hasVoted', 'true', 7);
+            console.log(document.cookie);
+            
+            window.location.replace('/submitted')
+            }
+        }
+    };
+                
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send();
+
+    
+}
 
 
 function checkCookie() {

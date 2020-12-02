@@ -109,7 +109,7 @@ a {
 }
 
 .footer .btnVote {
-  all: unset;
+  -webkit-appearance: none;
   background: none;
   border: none;
   font-size: 6vw;

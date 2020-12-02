@@ -51,14 +51,12 @@ a {
 
 /*naming content*/
 #candidatePageName {grid-area: name;}
-#candidatePageShortDesc {grid-area: shortDesc;}
 #candidatePageLifeDesc {grid-area: lifeDesc;}
 #candidatePageWorkDesc {grid-area: workDesc;}
 
 #testImg{
   border: solid goldenrod 0.3vw;
   grid-area: img; 
-  border-radius: 1vw;
   max-width: 400px; 
   border-radius: 10px;
 }
@@ -67,7 +65,7 @@ a {
   display: grid;
   grid-template-areas:
     'img name'
-    'img shortDesc'
+    'img name'
     'lifeDesc lifeDesc'
     'workDesc workDesc';
   grid-gap: 4vw;
@@ -162,7 +160,7 @@ a {
 }
 */
 
-@media only screen and (min-width: 800px) {
+/*@media only screen and (min-width: 800px) {
   .gridContent {
     grid-template-areas:
     'img img'
@@ -177,4 +175,4 @@ a {
     margin: 0 auto;
     min-width: 80vw;
   }
-}
+}*/

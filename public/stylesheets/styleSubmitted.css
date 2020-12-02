@@ -22,7 +22,7 @@ a {
  
 #topFrame {
   background: rgb(43, 43, 43);
-  border-bottom: solid gold 0.2vw;
+  border-bottom: solid goldenrod 0.2vw;
   width: 100%;
   }
 
@@ -48,5 +48,6 @@ a {
 #info {
   color: rgb(204, 204, 204);
   font-family: 'Be Vietnam';
+  font-size: 80%;
   text-align: center;
 }

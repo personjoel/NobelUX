@@ -16,7 +16,7 @@ a {
 /*Top content*/
 #topFrame {
   background: rgb(43, 43, 43);
-  border-bottom: solid gold 0.2vw;
+  border-bottom: solid goldenrod 0.2vw;
   margin-bottom: 2vw;
   width: 100%;
 }
@@ -29,29 +29,26 @@ a {
 }
 
 #topContent h2 {
-  font-size: 16vw; 
-}
-
-#topContent p {
-  font-size: 4.5vw; 
+  font-size: 240%; 
 }
 
 .goldText {
   background: url(../images/gold3.jpg) repeat;
-  font-family: 'Bilbo', cursive;
+  font-family: 'Amita', cursive;
   margin: 0;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 #imgCandidate {
-  border: solid gold 0.25vw;
+  border: solid goldenrod 0.25vw;
+  border-radius: 1vw;
   width: 60%;
 }
 
 #name {
   font-family: comfortaa;
-  font-size: 6vw; 
+  font-size: 100%;
   font-weight: normal;
   margin: 1.5vw;
   text-align: center;
@@ -64,9 +61,18 @@ a {
   width: 70%;
 }
 
+#votesPercent {
+  color: rgb(240, 240, 240);
+  font-family: 'Be Vietnam';
+  font-size: 90%;
+  font-weight: normal;
+}
+
   /*in-frame-content*/
 #content {
   color: rgb(204, 204, 204);
+  font-size: 90%;
+  font-style: italic;
   padding-right: 1vw;
   text-align: center;
 }

@@ -31,6 +31,6 @@ function myFunction(resultId) {
     document.getElementById("name").innerHTML= data.firstname + ' ' + data.lastname;
     document.getElementById("content").innerHTML= data.shortinfo;
     var img = document.getElementById('imgCandidate');
-    img.src = 'images/test.png';
+    img.src = data.imagecode;
     });
 }

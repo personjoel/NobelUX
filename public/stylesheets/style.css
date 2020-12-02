@@ -4,8 +4,9 @@ body {
   color: rgba(255, 255, 255);
   margin: 0;
   padding: 0;
-  width:100%;
+  width: 100%;
   font-family: 'Be Vietnam';
+  font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
   color:#EEEEE5;
 }
 
@@ -89,7 +90,7 @@ border-radius: 1vw;
 #homepageShortInfo {
   color: #a1a1a1;
   margin: 0;
-  font-size: 2vw;
+  font-size: 80%;
   font-style: italic;
   font-weight: lighter;
 }

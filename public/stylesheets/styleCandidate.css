@@ -73,7 +73,7 @@ a {
   padding: 4vw;
 }
 
-.testImg{
+#testImg{
   border: solid goldenrod 0.3vw;
   grid-area: img; 
   border-radius: 1vw;

@@ -164,3 +164,20 @@ a {
   -webkit-background-clip: text;
 }
 */
+
+@media only screen and (max-width: 800px) {
+  .gridContent {
+    grid-template-areas:
+    'img img'
+    'name name'
+    'shortDesc shortDesc'
+    'lifeDesc lifeDesc'
+    'workDesc workDesc';
+    grid-template-columns: auto auto;
+    column-gap: 2vw;
+  }
+  #testImg{
+    margin: 0 auto;
+    max-width: 80vw;
+  }
+}

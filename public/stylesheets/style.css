@@ -53,6 +53,7 @@ ul {
   margin:0 auto;
   text-align: center;
   font-size: 4.4vw; 
+  font-style: italic;
   width: 85%;
 }
 
@@ -79,8 +80,8 @@ border-radius: 1vw;
 }
 
 #mainContent h3 {
-  font-family: 'Be Vietnam';
-  font-size: 4vw; 
+  font-family: 'Comfortaa';
+  font-size: 75%; 
   font-weight: normal;
   margin: 2vw;
   margin-bottom: 1.5vw;

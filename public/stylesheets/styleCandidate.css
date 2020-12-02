@@ -104,7 +104,6 @@ a {
 
 /*Denna version har full guld bakgrund.. kanske ser mer interaktiv ut?? Potentiellt byta bakgrund??*/
 .footer {
-  -webkit-appearance: none;
   background: url(../images/gold3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -115,8 +114,7 @@ a {
   height: 15vw;
 }
 
-.btnVote {
-  -webkit-appearance: none;
+.footer .btnVote {
   background: none;
   border: none;
   font-size: 6vw;

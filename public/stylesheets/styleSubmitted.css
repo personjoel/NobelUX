@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
   
 body {
-  background: rgba(20, 20, 20);
+  background: #1A1A1A;
   color: rgba(255, 255, 255);
   font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
   padding: 0;
@@ -10,20 +10,52 @@ body {
 
 a {
   text-decoration: none;
+  margin-top: 50%;
+}
+
+#header {
+  background:#212121;
+  width: 100%;
+  position:fixed;
+  margin-top: -30%;
+}
+
+#header h2 {
+  font-size: 8vw; 
+  margin: 0 auto;
+  padding: 2vw; 
+  padding-bottom: 0;
+  text-align: center;
+  width: 90%;
+}
+
+.goldHeader {
+  background: url(../images/gold3.jpg) repeat;
+  font-family: 'Amita';
+  margin: 0;
+  margin-top: 2.5%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .goldText {
   background: url(../images/gold3.jpg) repeat;
-  font-family: 'Bilbo', cursive;
+  font-family: 'Amita';
   margin: 0;
+  margin-top: 10%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
  
 #topFrame {
-  background: rgb(43, 43, 43);
-  border-bottom: solid goldenrod 0.2vw;
-  width: 100%;
+  background:#292929;
+  padding: 1vw;
+  padding-right: 2vw;
+  margin-top: 30%;
+  margin-left: 6.4%;
+  border-radius: 1vw;
+  width: 85%;
+  height: 135vw;
   }
 
 #topContent {
@@ -33,8 +65,8 @@ a {
   width: 80%;
 }
 
-#topContent h1 {
-  font-size: 15vw; 
+#topContent h3 {
+  font-size: 8vw;  
 }
 
 /*Mid content*/
@@ -48,7 +80,23 @@ a {
 #info {
   color: rgb(204, 204, 204);
   font-family: 'Be Vietnam';
-  font-size: 80%;
+  font-size: 100%;
   font-style: italic;
   text-align: center;
+  margin-top: 20%;
+  margin-bottom: 35%;
+}
+
+#homeButton{
+  background: url(../images/gold3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Be Vietnam';
+  padding:3% 4% 5% 4%;
+  border-radius: 40px;
+  font-size: 130%;
+  color:#212121;
+  margin-top: 50%;
 }

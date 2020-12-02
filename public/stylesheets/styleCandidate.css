@@ -88,13 +88,7 @@ a {
   letter-spacing: 0.2vw;
 }
 
-#candidatePageLifeDesc {
-  color:#c7c7c7;
-  font-family: 'Be Vietnam';
-  font-size: 40px;
-}
-
-#candidatePageWorkDesc {
+#candidatePageLifeDesc, #candidatePageWorkDesc {
   color:#c7c7c7;
   font-family: 'Be Vietnam';
   font-size: 40px;

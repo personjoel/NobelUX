@@ -65,7 +65,6 @@ a {
   display: grid;
   grid-template-areas:
     'img name'
-    'img name'
     'lifeDesc lifeDesc'
     'workDesc workDesc';
   grid-gap: 4vw;
@@ -78,7 +77,7 @@ a {
   padding: 4vw;
 }
 
-#candidatePageName, #candidatePageShortDesc {
+#candidatePageName {
   margin: auto;
   text-align: center;
 }
@@ -89,31 +88,23 @@ a {
   letter-spacing: 0.2vw;
 }
 
-#candidatePageShortDesc{
-  color:#dbdbdb;
-  font-size: 3vw;
-  font-family: 'Be Vietnam';
-  font-style: italic;
-}
-
 #candidatePageLifeDesc {
   color:#c7c7c7;
   font-family: 'Be Vietnam';
-  font-size: 3vw;
-  margin-top: 4%;
+  font-size: 40px;
 }
 
 #candidatePageWorkDesc {
   color:#c7c7c7;
   font-family: 'Be Vietnam';
-  font-size: 3vw;
-  margin-top: 0%;
+  font-size: 40px;
 }
 
 /*Footer*/
 
 /*Denna version har full guld bakgrund.. kanske ser mer interaktiv ut?? Potentiellt byta bakgrund??*/
 .footer {
+  -webkit-appearance: none;
   background: url(../images/gold3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,6 +116,7 @@ a {
 }
 
 .btnVote {
+  -webkit-appearance: none;
   background: none;
   border: none;
   font-size: 6vw;

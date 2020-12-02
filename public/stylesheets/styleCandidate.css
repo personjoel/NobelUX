@@ -94,12 +94,11 @@ a {
 #candidatePageShortDesc{
   color:#dbdbdb;
   float:left;
-  font-size: 75%;
+  font-size: 70%;
   font-family: 'Be Vietnam';
   font-style: italic;
   margin: 0;
   margin-left: -2vw;
-  margin-top: -10vw;
 }
 
 #candidatePageLifeDesc {

@@ -84,7 +84,7 @@ a {
 
 #candidatePageName{
   font-family: 'Be Vietnam';
-  font-size: 5.5vw;
+  font-size: 110%;
   letter-spacing: 0.2vw;
   margin: 0;
   margin-top: -2vw;
@@ -94,7 +94,7 @@ a {
 #candidatePageShortDesc{
   color:#dbdbdb;
   float:left;
-  font-size: 2vw;
+  font-size: 80%;
   font-family: 'Be Vietnam';
   font-style: italic;
   margin: 0;
@@ -104,16 +104,14 @@ a {
 #candidatePageLifeDesc {
   color:#c7c7c7;
   font-family: 'Be Vietnam';
-  font-size: 2vw;
-  line-height: 7vw;
+  font-size: 82%;
   margin-top: 4%;
 }
 
 #candidatePageWorkDesc {
   color:#c7c7c7;
   font-family: 'Be Vietnam';
-  font-size: 2vw;
-  line-height: 7vw;
+  font-size: 82%;
   margin-top: 0%;
 }
 

@@ -88,7 +88,7 @@ function getLosers(voteData, sum) {
                         <img class="entryImg" src='${data.imagecode}'>
                         <div id= "homepageCandidates">
                         <h3>${data.firstname} ${data.lastname}</h3>
-                        <p>${Math.round(percentage * 10) / 10}%</p>
+                        <p id="loserProc">${Math.round(percentage * 10) / 10}%</p>
                         </div>
                     
                     </div></div>

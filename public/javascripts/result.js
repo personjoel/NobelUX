@@ -1,5 +1,6 @@
 var resultId;
 
+/**get JSON for votes */
 fetch(`https://nobeldata.herokuapp.com/vote`)
 .then(response => response.json())
 .then(data => {
@@ -24,6 +25,7 @@ fetch(`https://nobeldata.herokuapp.com/vote`)
     myFunction(resultId);
 });
 
+/**get candidate with the most votes */
 function myFunction(resultId) {
     fetch(`https://nobeldata.herokuapp.com/nobel/${resultId}`)
     .then(response => response.json())
@@ -34,3 +36,4 @@ function myFunction(resultId) {
     img.src = data.imagecode;
     });
 }
+

@@ -3,7 +3,11 @@ window.onload = checkCookie;
 function disableButton() {
     var x = document.getElementsByClassName('btnVote');
     for (var i = 0; i < x.length; i++) {
-        x[i].disabled = true;
+        x[i].style.visibility = 'hidden';
+    }
+    var x = document.getElementsByClassName('footer');
+    for (var i = 0; i < x.length; i++) {
+        x[i].style.visibility = 'hidden';
     }
 }
 
@@ -77,8 +81,6 @@ function voteFunction(url) {
 
     url = url + idCandidate;
 
-    
-
     var xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
     xhr.onreadystatechange = function () {
@@ -116,8 +118,7 @@ function checkCookie() {
 
       
     }
-
+    
     myFunction();
-
 
 }

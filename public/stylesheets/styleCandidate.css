@@ -105,8 +105,8 @@ a {
   height: 15vw;
 }
 
-.footer .btnVote {
-  -webkit-appearance: none !important;
+input[type="button"] {
+  -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background: none;

@@ -63,6 +63,10 @@ ul {
   overflow: auto;
 }
 
+#homepageCandidate {
+  margin: 0;
+}
+
 .contentFrame {
 background:#292929;
 overflow: auto;

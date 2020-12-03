@@ -1,7 +1,8 @@
+/*importerar typsnitt*/
 @import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
-/*General*/
+/*Generell styling*/
 body {
   background: #1A1A1A;
   color: rgba(255, 255, 255);
@@ -10,11 +11,12 @@ body {
   padding: 0;
 }
 
+/*länkars standardstyling tas bort*/
 a {
   text-decoration: none;
 }
 
-/*Header*/
+/*ram för header*/
 #topFrame {
   background:#212121;
   width: 100%;
@@ -22,6 +24,7 @@ a {
   top: 0;
 }
 
+/*position och storlek för rubrik 'nobel 2020'*/
 #topFrame h2 {
   font-size: 8vw; 
   margin: 0 auto;
@@ -31,6 +34,7 @@ a {
   width: 90%;
 }
 
+/*position för bakknapp*/
 #backIcon{
   float: left;
   position: absolute;
@@ -39,6 +43,7 @@ a {
   width:7vw;
 }
 
+/*färg och font för rubriken 'nobel 2020'*/
 .goldText {
   background: url(../images/gold3.jpg) repeat;
   font-family: 'Amita';
@@ -49,11 +54,12 @@ a {
 }
 
 
-/*naming content*/
+/*namnger innehåll för att kunna organisera med grid*/
 #candidatePageName {grid-area: name;}
 #candidatePageLifeDesc {grid-area: lifeDesc;}
 #candidatePageWorkDesc {grid-area: workDesc;}
 
+/*bestämmer storlek och ram för kandidaternas bilder*/
 #testImg{
   border: solid goldenrod 0.3vw;
   grid-area: img; 
@@ -61,6 +67,7 @@ a {
   border-radius: 10px;
 }
 
+/*bestämmer hur sidans innehåll ska ordnas, position, mellanrum mellan innehåll, i vilken ordning innehåll visas och hur mycket plats innehållet får ta.*/
 .gridContent {
   display: grid;
   grid-template-areas:
@@ -77,6 +84,7 @@ a {
   padding: 4vw;
 }
 
+/*typsnitt, storlek, färg samt position för kandidatens namn*/
 #candidatePageName{
   font-family: 'Be Vietnam';
   font-size: 110%;
@@ -85,15 +93,15 @@ a {
   text-align: center;
 }
 
+/*beskriver hur innehållet för work och life ska visas, typsnitt, storlek, färg*/
 #candidatePageLifeDesc, #candidatePageWorkDesc {
   color:#c7c7c7;
   font-family: 'Be Vietnam';
   font-size: 40px;
 }
 
-/*Footer*/
-
 /*Denna version har full guld bakgrund.. kanske ser mer interaktiv ut?? Potentiellt byta bakgrund??*/
+/*Design för footer samt button*/
 .footer {
   background: url(../images/gold3.jpg);
   background-repeat: no-repeat;
@@ -105,9 +113,7 @@ a {
   height: 15vw;
 }
 
-input[type="button"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.footer .btnVote {
   appearance: none;
   background: none;
   border: none;

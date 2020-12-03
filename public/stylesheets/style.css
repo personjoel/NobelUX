@@ -53,6 +53,7 @@ ul {
   margin:0 auto;
   text-align: center;
   font-size: 4.4vw; 
+  font-style: italic;
   width: 85%;
 }
 
@@ -60,6 +61,10 @@ ul {
 .homepageCandidates {
   list-style-type: none; 
   overflow: auto;
+}
+
+#homepageCandidate {
+  margin: 0;
 }
 
 .contentFrame {
@@ -71,7 +76,7 @@ margin-top: 5%;
 border-radius: 1vw;
 }
 
-    /*in-frame-content*/
+/*in-frame-content*/
 #mainContent {
   padding: 0;
   margin: 0 auto;
@@ -80,7 +85,7 @@ border-radius: 1vw;
 
 #mainContent h3 {
   font-family: 'Be Vietnam';
-  font-size: 4vw; 
+  font-size: 75%; 
   font-weight: normal;
   margin: 2vw;
   margin-bottom: 1.5vw;

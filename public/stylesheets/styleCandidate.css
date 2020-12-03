@@ -57,7 +57,7 @@ a {
 #testImg{
   border: solid goldenrod 0.3vw;
   grid-area: img; 
-  max-width: 400px; 
+  width: 100%; 
   border-radius: 10px;
 }
 

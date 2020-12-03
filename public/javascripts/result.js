@@ -67,7 +67,7 @@ function getLosers(voteData, sum) {
 
     function process(prom) {
 
-        setTimeout(myFunction, 500);
+        setTimeout(myFunction, 10);
 
         function myFunction() {
             prom.then(data=>{

@@ -1,7 +1,7 @@
 var resultId;
 
 /**get JSON for votes */
-fetch(`https://nobeldata.herokuapp.com/vote`)
+fetch(`https://votenobleapi.herokuapp.com/vote`)
 .then(response => response.json())
 .then(data => {
     console.log(data);

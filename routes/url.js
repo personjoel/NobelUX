@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/:id', function(req, res, next) {
   if (req.params.id == '0') {
-      res.send('https://nobeldata.herokuapp.com/vote/');
+      res.send('https://votenobleapi.herokuapp.com/vote/');
   }
 });
 

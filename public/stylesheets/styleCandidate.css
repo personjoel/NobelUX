@@ -106,8 +106,6 @@ a {
 }
 
 .footer .btnVote {
-  -webkit-appearance: button !important;
-  -moz-appearance: none;
   appearance: none;
   background: none;
   border: none;

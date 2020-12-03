@@ -15,8 +15,11 @@ a {
   color: white;
 }
 
-a:active {
-  background-color: #4D4D4D;
+a:active, a:focus {
+  text-decoration: none;
+  background-color: inherit;
+  outline: none;
+  box-shadow: none;
 }
 
 /*general*/

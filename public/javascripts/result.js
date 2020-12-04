@@ -13,6 +13,8 @@ fetch(`https://votenobleapi.herokuapp.com/vote`)
         sum += data[i].votes;
     }
 
+    var unsortedData = Object.assign({}, data);
+    
     data.splice(obj.id, 1);
 
     var percentage = (res / sum) * 100;
@@ -21,11 +23,11 @@ fetch(`https://votenobleapi.herokuapp.com/vote`)
 
     resultId = obj.id;
 
-    getWinner(resultId, data, sum);
+    getWinner(resultId, data, sum, unsortedData);
 });
 
 /**get candidate with the most votes */
-function getWinner(resultId, voteData, sum) {
+function getWinner(resultId, voteData, sum, unsortedData) {
     fetch(`https://nobeldata.herokuapp.com/nobel/${resultId}`)
     .then(response => response.json())
     .then(data => {
@@ -34,15 +36,13 @@ function getWinner(resultId, voteData, sum) {
     var img = document.getElementById('imgCandidate');
     img.src = data.imagecode;
     
-    getLosers(voteData, sum);
+    getLosers(voteData, sum, unsortedData);
     });
 
 
 }
 
-function getLosers(voteData, sum) {
-
-    var unsortedData = Object.assign({}, voteData)
+function getLosers(voteData, sum, unsortedData) {
 
     voteData.sort(function(a, b){
         return b.votes-a.votes;
@@ -73,9 +73,9 @@ function getLosers(voteData, sum) {
             prom.then(data=>{
 
                 if (data.id == 7) {
-                    var percentage = (unsortedData[data.id - 1].votes / sum) * 100;
+                    var percentage = Math.round(((unsortedData[data.id - 1].votes / sum) * 100) * 10) / 10;
                 } else {
-                    var percentage = (unsortedData[data.id].votes / sum) * 100;
+                    var percentage = Math.round(((unsortedData[data.id].votes / sum) * 100) * 10) / 10;
                 }
                 
                 
@@ -88,7 +88,7 @@ function getLosers(voteData, sum) {
                         <img class="entryImg" src='${data.imagecode}'>
                         <div id= "homepageCandidates">
                         <h3>${data.firstname} ${data.lastname}</h3>
-                        <p id="loserProc">${Math.round(percentage * 10) / 10}%</p>
+                        <p id="loserProc">${percentage}%</p>
                         </div>
                     
                     </div></div>

@@ -4,7 +4,9 @@ var dateCheck = require('../node_functions/date.js');
 
 router.get('/:id', function(req, res, next) {
   if (dateCheck[1] >= dateCheck[0]) {
-    res.render('result', { title: 'Results' });
+    res.statusCode = 302;
+    res.setHeader("Location", "https://nobel-app.herokuapp.com/");
+    res.end();
   } else {
     res.render('candidate', { title: 'Ind. candidate page', id: req.params.id });
   }

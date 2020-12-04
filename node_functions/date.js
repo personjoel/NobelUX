@@ -1,10 +1,16 @@
-var date = new Date('December 4, 2020 12:10:00 GMT');
+function dateActivate() {
+    var date = new Date('December 4, 2020 12:10:00 GMT');
   
-var dateNow = new Date();
-dateNow.setHours(dateNow.getHours() + 1);
+    var dateNow = new Date();
+    dateNow.setHours(dateNow.getHours() + 1);
 
-var dates = [date, dateNow];
+    var dates = [date, dateNow];
 
-console.log(dates);
+    console.log(dates);
 
-module.exports = dates;
+    exports.dates = dates;
+}
+
+
+
+exports.method = dateActivate;

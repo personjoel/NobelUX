@@ -3,8 +3,12 @@ var router = express.Router();
 var dateCheck = require('../node_functions/date.js');
 
 router.get('/', function(req, res, next) {
-  if (dateCheck[1] >= dateCheck[0]) {
-    res.render('result', { title: 'Results' });
+  dateCheck.method();
+
+  if (dateCheck.dates[1] >= dateCheck.dates[0]) {
+    res.statusCode = 302;
+    res.setHeader("Location", "https://nobel-app.herokuapp.com/");
+    res.end();
   } else {
     res.render('index', { title: 'Canditates' });
   }

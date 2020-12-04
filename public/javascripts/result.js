@@ -70,12 +70,16 @@ function getLosers(voteData, sum, unsortedData) {
 
         function myFunction() {
             prom.then(data=>{
-
+                
                 if (data.id == 7) {
-                    var percentage = Math.round(((unsortedData[data.id - 1].votes / sum) * 100) * 10) / 10;
+                    
+                    var result = voteData.find(x => x.name === "Ada Lovelace");
+                    var percentage = Math.round(((result.votes / sum) * 100) * 10) / 10;
                 } else {
                     var percentage = Math.round(((unsortedData[data.id].votes / sum) * 100) * 10) / 10;
                 }
+
+                
                 
                 
                 

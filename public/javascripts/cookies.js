@@ -88,6 +88,7 @@ function voteFunction(url) {
     if(xhr.readyState === XMLHttpRequest.DONE) {
         var status = xhr.status;
         if (status === 200) {
+            
             setCookie('hasVoted', 'true', 1);
             console.log(document.cookie);
             
@@ -113,7 +114,7 @@ function checkCookie() {
         console.log(document.cookie);
     } 
     else {
-      setCookie('hasVoted', 'false', 7);
+      setCookie('hasVoted', 'false', 1);
       console.log(document.cookie);
 
       

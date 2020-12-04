@@ -55,7 +55,10 @@ ul {
   #imgCandidate {
     border: solid goldenrod 0.1vw;
     border-radius: 1vw;
-    width: 20vw;
+    width: 17vw;
+  }
+  #topContent h2 {
+    font-size: 137%; 
   }
 
   #goldline{

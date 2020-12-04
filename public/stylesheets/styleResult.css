@@ -13,18 +13,17 @@ a {
   color: white;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 /*Top content*/
 #topFrame {
   background: rgb(43, 43, 43);
-  margin-bottom: 2vw;
-  width: 90%;
-  margin-left: 5%;
-  border-radius: 0px 0px 10px 10px;
-}
-
-#goldline{
-  border-bottom: solid goldenrod 0.25vw;
-  margin-top: 5%;
+  border-bottom: solid goldenrod 0.2vw;
+  margin-bottom: 5vw;
+  width: 100%;
 }
 
 #topContent {
@@ -56,7 +55,10 @@ a {
   #imgCandidate {
     border: solid goldenrod 0.1vw;
     border-radius: 1vw;
-    width: 20vw;
+    width: 17vw;
+  }
+  #topContent h2 {
+    font-size: 137%; 
   }
 
   #goldline{
@@ -74,13 +76,6 @@ a {
   margin-top: 2%;
 }
 
-/*Main Content*/
-#mainContent {
-  padding: 0;
-  margin: 0 auto;
-  width: 70%;
-}
-
 #votesPercent {
   color: rgb(240, 240, 240);
   font-family: 'Be Vietnam';
@@ -88,47 +83,33 @@ a {
   font-weight: normal;
 }
 
-  /*in-frame-content*/
-#content {
-  color: rgb(204, 204, 204);
-  font-size: 90%;
-  font-style: italic;
-  font-weight: lighter;
-  padding-right: 1vw;
-  text-align: center;
-}
-
+/*other candidates- Content*/
 #mainContent{
   background: rgb(43, 43, 43);
-  margin-bottom: 2vw;
+  border-radius: 1vw;
+  margin: 0 auto;
+  margin-bottom: 5vw;
+  padding: 0;
   width: 90%;
-  margin-left: 5%;
-  border-radius: 0px 0px 10px 10px;
 }
 
-.contentFrame{
-  margin-top: 10%;
-margin-right: 50vw;
-
+#resultCandidates {
+  overflow: auto;
+  padding: 3vw;
 }
 
+  /*in-frame-content*/
 .entryImg{
   border-radius: 1vw;
-  width: 25vw;
-  float:left;
+  border: solid goldenrod 0.2vw;
+  width: 40%;
+  float: left;
 }
 
-#mainContent h3{
-  margin-left: 75%;
-  font-size: 2vw;
+#loserName, #loserProc {
+  font-size: 80%;
   font-weight: normal;
-}
-
-#loserProc{
-float: right;
-font-size: 80%;
-}
-
-#contentFrameWrap{
-
+  float: left;
+  margin: 0;
+  margin-left: 2vw;
 }

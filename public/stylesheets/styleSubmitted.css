@@ -17,7 +17,7 @@ a {
   background:#212121;
   width: 100%;
   position:fixed;
-  margin-top: -30%;
+  margin-top: -20%;
 }
 
 #header h2 {
@@ -51,7 +51,7 @@ a {
   background:#292929;
   padding: 1vw;
   padding-right: 2vw;
-  margin-top: 30%;
+  margin-top: 20%;
   margin-left: 6.4%;
   border-radius: 1vw;
   width: 85%;

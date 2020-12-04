@@ -84,14 +84,11 @@ function getLosers(voteData, sum, unsortedData) {
                     li.classList.add("entries");
             
                     const markup = `
-                    <div class="contentFrameWrap"><div class="contentFrame">
-                        <img class="entryImg" src='${data.imagecode}'>
-                        <div id= "homepageCandidates">
-                        <h3>${data.firstname} ${data.lastname}</h3>
-                        <p id="loserProc">${percentage}%</p>
+                        <div id= "resultCandidates">
+                            <img class="entryImg" src='${data.imagecode}'>
+                            <h3 id="loserName">${data.firstname} ${data.lastname}</h3>
+                            <p id="loserProc">${percentage}%</p>
                         </div>
-                    
-                    </div></div>
                     `;
             
                     li.innerHTML = markup;

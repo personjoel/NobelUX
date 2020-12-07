@@ -1,5 +1,5 @@
 function dateActivate() {
-    var date = new Date('December 7, 2020 14:10:00 GMT');
+    var date = new Date('December 7, 2020 14:35:00 GMT');
   
     var dateNow = new Date();
     dateNow.setHours(dateNow.getHours() + 1);

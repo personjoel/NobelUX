@@ -1,6 +1,5 @@
 var resultId;
 
-/**get JSON for votes */
 fetch(`https://votenobleapi.herokuapp.com/vote`)
 .then(response => response.json())
 .then(data => {
@@ -26,7 +25,6 @@ fetch(`https://votenobleapi.herokuapp.com/vote`)
     getWinner(resultId, data, sum, unsortedData);
 });
 
-/**get candidate with the most votes */
 function getWinner(resultId, voteData, sum, unsortedData) {
     fetch(`https://nobeldata.herokuapp.com/nobel/${resultId}`)
     .then(response => response.json())

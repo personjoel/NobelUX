@@ -32,6 +32,7 @@ function getWinner(resultId, voteData, sum, unsortedData) {
     document.getElementById("name").innerHTML= data.firstname + ' ' + data.lastname;
     var img = document.getElementById('imgCandidate');
     img.src = data.imagecode;
+
     
     getLosers(voteData, sum, unsortedData);
     });
@@ -45,7 +46,7 @@ function getLosers(voteData, sum, unsortedData) {
         return b.votes-a.votes;
     });
 
-    console.log(voteData);
+    //console.log(voteData);
 
     let promises = [];
     for (var i = 1; i <= voteData.length; i++) {
@@ -55,7 +56,7 @@ function getLosers(voteData, sum, unsortedData) {
     Promise.all(promises)
     .then(files =>{
         files.forEach(file=>{
-            console.log(file);
+            //console.log(file);
             process(file.json());
         });
     });
@@ -93,7 +94,7 @@ function getLosers(voteData, sum, unsortedData) {
                     `;
             
                     li.innerHTML = markup;
-                    console.log(li);
+                    //console.log(li);
                     document.getElementById("entries").appendChild(li);
             });
         }
